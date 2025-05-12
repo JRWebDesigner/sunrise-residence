@@ -196,7 +196,7 @@ export default function Home() {
 
       {/* Contacto */}
       <footer className="py-6 text-center text-sm text-gray-400">
-        <p>Contáctanos: +52 123 456 7890</p>
+        <p>Contáctanos: +39 331 741 5002</p>
         <p>&copy; 2025 Sunrise Residence. Todos los derechos reservados.</p>
       </footer>
     </main>
