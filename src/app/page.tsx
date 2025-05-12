@@ -1,22 +1,25 @@
 "use client"
+import { useState } from 'react';
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link"
 import {
-  FaWifi, FaParking, FaCity, FaSnowflake,
+  HiMenu, HiX, FaWifi, FaParking, FaCity, FaSnowflake,
   FaSmokingBan, FaCouch, FaBath,
   FaDoorClosed, FaInstagram, FaFacebookF, FaTwitter, FaTiktok, FaYoutube
 } from "react-icons/fa";
 
 export default function Home() {
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <main className="bg-black text-white min-h-screen font-sans">
-      <header className="w-full bg-zinc-900 px-6 py-4 flex justify-between items-center text-xl font-bold uppercase">
-        <div className="flex items-center gap-6">
+      <header className="w-full bg-zinc-900 px-6 py-4 text-xl font-bold uppercase">
+      <div className="flex justify-between items-center">
+        <div className="hidden md:flex items-center gap-6">
           <Link href="#"><span className="border-b border-yellow-400 pb-0.5">Home</span></Link>
           <div className="relative group">
             <button className="flex items-center gap-1">Languages ▾</button>
-            <div className="absolute hidden group-hover:block bg-black border border-zinc-700 mt-2 p-2 text-sm">
+            <div className="absolute hidden group-hover:block bg-black border border-zinc-700 mt-2 p-2 text-sm z-10">
               <Link href="/es"><div className="hover:text-yellow-400">Español</div></Link>
               <Link href="/en"><div className="hover:text-yellow-400">English</div></Link>
               <Link href="/it"><div className="hover:text-yellow-400">Italiano</div></Link>
@@ -24,15 +27,40 @@ export default function Home() {
           </div>
           <Link href="/"><span className="hover:text-yellow-400">Your Host</span></Link>
         </div>
+
         <div className="flex flex-col items-center">
-          <Image src="/images/logo.webp" alt="Logo" width={320} height={320} />
+          <Image src="/images/logo.webp" alt="Logo" width={160} height={160} className="w-20 md:w-40" />
         </div>
-        <div className="flex items-center gap-6">
+
+        <div className="hidden md:flex items-center gap-6">
           <Link href="https://facebook.com"><span className="hover:text-yellow-400">Facebook</span></Link>
           <Link href="https://booking.com"><span className="hover:text-yellow-400">Booking.com</span></Link>
           <Link href="https://airbnb.com"><span className="hover:text-yellow-400">Airbnb.com</span></Link>
         </div>
-      </header>
+
+        <button className="md:hidden text-white text-3xl" onClick={() => setMenuOpen(!menuOpen)}>
+          {menuOpen ? <HiX /> : <HiMenu />}
+        </button>
+      </div>
+
+      {menuOpen && (
+        <div className="md:hidden mt-4 flex flex-col gap-4">
+          <Link href="#"><span className="text-yellow-400">Home</span></Link>
+          <Link href="/"><span>Your Host</span></Link>
+          <div>
+            <span>Languages</span>
+            <div className="pl-4 text-sm">
+              <Link href="/es"><div>Español</div></Link>
+              <Link href="/en"><div>English</div></Link>
+              <Link href="/it"><div>Italiano</div></Link>
+            </div>
+          </div>
+          <Link href="https://facebook.com">Facebook</Link>
+          <Link href="https://booking.com">Booking.com</Link>
+          <Link href="https://airbnb.com">Airbnb.com</Link>
+        </div>
+      )}
+    </header>
 
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center">
