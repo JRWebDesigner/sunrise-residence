@@ -62,7 +62,7 @@ export default function Home() {
         >
           <h2 className="text-4xl font-bold text-yellow-400 text-center mb-10">Benvenuto</h2>
           <p className="text-lg text-gray-300 max-w-3xl mx-auto leading-8">
-Sunrise Residence si tratta di un appartamento recentemente ristrutturato e offre alloggio ad Alba. Questa sistemazione offre una vista sul cortile interno e un balcone. L'appartamento dispone di camere climatizzate, parcheggio privato gratuito e connessione Wi-Fi gratuita.
+Sunrise Residence si tratta di un appartamento recentemente ristrutturato e offre alloggio ad Alba. Questa sistemazione offre una vista sul cortile interno e un balcone. L appartamento dispone di camere climatizzate, parcheggio privato gratuito e connessione Wi-Fi gratuita.
           </p>
         </motion.div>
       </section>
