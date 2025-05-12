@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link"
 import {
-  FaWifi, FaParking, FaCity, FaGlassCheers, FaKey, FaFireExtinguisher, FaSnowflake,
-  FaSmokingBan, FaLock, FaVideo, FaUserShield, FaUtensils, FaCouch, FaBath,
+  FaWifi, FaParking, FaCity, FaSnowflake,
+  FaSmokingBan, FaCouch, FaBath,
   FaDoorClosed, FaInstagram, FaFacebookF, FaTwitter, FaTiktok, FaYoutube
 } from "react-icons/fa";
 
@@ -62,7 +62,7 @@ export default function Home() {
         >
           <h2 className="text-4xl font-bold text-yellow-400 text-center mb-10">Benvenuto</h2>
           <p className="text-lg text-gray-300 max-w-3xl mx-auto leading-8">
-"Sunrise Residence" si tratta di un appartamento recentemente ristrutturato e offre alloggio ad Alba. Questa sistemazione offre una vista sul cortile interno e un balcone. L'appartamento dispone di camere climatizzate, parcheggio privato gratuito e connessione Wi-Fi gratuita.
+Sunrise Residence si tratta di un appartamento recentemente ristrutturato e offre alloggio ad Alba. Questa sistemazione offre una vista sul cortile interno e un balcone. L'appartamento dispone di camere climatizzate, parcheggio privato gratuito e connessione Wi-Fi gratuita.
           </p>
         </motion.div>
       </section>
@@ -86,7 +86,7 @@ La struttura è composta da due moderni appartamenti completamente attrezzati, c
           <div>
             <h3 className="text-yellow-400 text-2xl font-bold mb-4">Noi Offriamo</h3>
             <p className="text-gray-300 leading-7">
-              L'appartamento dispone di terrazza, vista sulla città, area salotto, TV a schermo piatto, angolo cottura completamente attrezzato con lavastoviglie, forno a microonde, tostapane, frigorifero, macchinetta del caffè e bollitore. Il bagno privato è completo di bidet e asciugacapelli.
+              L appartamento dispone di terrazza, vista sulla città, area salotto, TV a schermo piatto, angolo cottura completamente attrezzato con lavastoviglie, forno a microonde, tostapane, frigorifero, macchinetta del caffè e bollitore. Il bagno privato è completo di bidet e asciugacapelli.
             </p>
           </div>
         </div>
@@ -107,7 +107,7 @@ La struttura è composta da due moderni appartamenti completamente attrezzati, c
           <div>
             <h3 className="text-yellow-400 text-2xl font-bold mb-4">Buona Posizione</h3>
             <p className="text-gray-300 leading-7 mb-4">
-              Vicino all’appartamento potete trovare diversi ristoranti, luoghi di intrattenimento e zone turistiche che vi consigliamo di visitare. L’aeroporto più vicino è quello internazionale di Cuneo, a 46 km dall’appartamento.
+              Vicino all appartamento potete trovare diversi ristoranti, luoghi di intrattenimento e zone turistiche che vi consigliamo di visitare. L aeroporto più vicino è quello internazionale di Cuneo, a 46 km dall’appartamento.
             </p>
             <a href="https://facebook.com" className="inline-block border border-yellow-400 text-yellow-400 px-4 py-2 rounded hover:bg-yellow-400 hover:text-black transition">IL NOSTRO FACEBOOK</a>
           </div>
