@@ -14,54 +14,61 @@ export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <main className="bg-black text-white min-h-screen font-sans">
-      <header className="w-full bg-zinc-900 px-6 py-4 text-xl font-bold uppercase">
-      <div className="flex justify-between items-center">
-        <div className="hidden md:flex items-center gap-6">
-          <Link href="#"><span className="border-b border-yellow-400 pb-0.5">Home</span></Link>
-          <div className="relative group">
-            <button className="flex items-center gap-1">Languages ▾</button>
-            <div className="absolute hidden group-hover:block bg-black border border-zinc-700 mt-2 p-2 text-sm z-10">
-              <Link href="/es"><div className="hover:text-yellow-400">Español</div></Link>
-              <Link href="/en"><div className="hover:text-yellow-400">English</div></Link>
-              <Link href="/it"><div className="hover:text-yellow-400">Italiano</div></Link>
-            </div>
-          </div>
-          <Link href="/"><span className="hover:text-yellow-400">Your Host</span></Link>
-        </div>
+       <header className="w-full bg-zinc-900 px-6 py-4 flex justify-between items-center text-xl font-bold uppercase text-white">
+        <button className="md:hidden text-3xl" onClick={() => setOpen(true)}>
+          <HiMenu />
+        </button>
 
         <div className="flex flex-col items-center">
           <Image src="/images/logo.webp" alt="Logo" width={160} height={160} className="w-20 md:w-40" />
         </div>
 
         <div className="hidden md:flex items-center gap-6">
+          <Link href="#"><span className="border-b border-yellow-400 pb-0.5">Home</span></Link>
+          <div className="relative group">
+            <button className="flex items-center gap-1">Languages ▾</button>
+            <div className="absolute hidden group-hover:block bg-black border border-zinc-700 mt-2 p-2 text-sm">
+              <Link href="/es"><div className="hover:text-yellow-400">Español</div></Link>
+              <Link href="/en"><div className="hover:text-yellow-400">English</div></Link>
+              <Link href="/it"><div className="hover:text-yellow-400">Italiano</div></Link>
+            </div>
+          </div>
+          <Link href="/"><span className="hover:text-yellow-400">Your Host</span></Link>
           <Link href="https://facebook.com"><span className="hover:text-yellow-400">Facebook</span></Link>
           <Link href="https://booking.com"><span className="hover:text-yellow-400">Booking.com</span></Link>
           <Link href="https://airbnb.com"><span className="hover:text-yellow-400">Airbnb.com</span></Link>
         </div>
+      </header>
 
-        <button className="md:hidden text-white text-3xl" onClick={() => setMenuOpen(!menuOpen)}>
-          {menuOpen ? <HiX /> : <HiMenu />}
-        </button>
-      </div>
+      <AnimatePresence>
+        {open && (
+          <motion.aside
+            initial={{ x: '-100%' }}
+            animate={{ x: 0 }}
+            exit={{ x: '-100%' }}
+            transition={{ type: 'tween' }}
+            className="fixed top-0 left-0 w-full h-full bg-zinc-900 text-white z-50 px-10 py-8 flex flex-col gap-6 text-xl font-bold uppercase"
+          >
+            <button className="self-end text-3xl mb-6" onClick={() => setOpen(false)}>
+              <HiX />
+            </button>
 
-      {menuOpen && (
-        <div className="md:hidden mt-4 flex flex-col gap-4">
-          <Link href="#"><span className="text-yellow-400">Home</span></Link>
-          <Link href="/"><span>Your Host</span></Link>
-          <div>
-            <span>Languages</span>
-            <div className="pl-4 text-sm">
-              <Link href="/es"><div>Español</div></Link>
-              <Link href="/en"><div>English</div></Link>
-              <Link href="/it"><div>Italiano</div></Link>
+            <Link href="#" onClick={() => setOpen(false)}>Home</Link>
+            <div>
+              <span>Languages ▾</span>
+              <div className="pl-4 mt-2 text-base">
+                <Link href="/es" onClick={() => setOpen(false)}>Español</Link><br />
+                <Link href="/en" onClick={() => setOpen(false)}>English</Link><br />
+                <Link href="/it" onClick={() => setOpen(false)}>Italiano</Link>
+              </div>
             </div>
-          </div>
-          <Link href="https://facebook.com">Facebook</Link>
-          <Link href="https://booking.com">Booking.com</Link>
-          <Link href="https://airbnb.com">Airbnb.com</Link>
-        </div>
-      )}
-    </header>
+            <Link href="/" onClick={() => setOpen(false)}>Your Host</Link>
+            <Link href="https://facebook.com" onClick={() => setOpen(false)}>Facebook</Link>
+            <Link href="https://booking.com" onClick={() => setOpen(false)}>Booking.com</Link>
+            <Link href="https://airbnb.com" onClick={() => setOpen(false)}>Airbnb.com</Link>
+          </motion.aside>
+        )}
+      </AnimatePresence>
 
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center">
