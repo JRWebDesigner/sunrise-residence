@@ -181,7 +181,7 @@ export default function Home() {
             />
             <textarea
               placeholder="Mensaje"
-              rows="5"
+              rows={5}
               className="w-full px-4 py-3 rounded-lg bg-zinc-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-400"
             ></textarea>
             <button
