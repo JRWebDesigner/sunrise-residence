@@ -4,10 +4,11 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link"
 import {
-  HiMenu, HiX, FaWifi, FaParking, FaCity, FaSnowflake,
+   FaWifi, FaParking, FaCity, FaSnowflake,
   FaSmokingBan, FaCouch, FaBath,
   FaDoorClosed, FaInstagram, FaFacebookF, FaTwitter, FaTiktok, FaYoutube
 } from "react-icons/fa";
+import { HiMenu, HiX } from 'react-icons/hi';
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
