@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import {
   FaWifi, FaParking, FaGlassCheers, FaKey, FaFireExtinguisher, FaSnowflake,
-  FaSmokingBan, FaLock, FaVideo, FaUserShield, FaUtensils, FaCouch,
+  FaSmokingBan, FaLock, FaVideo, FaUserShield, FaCouch,
   FaInstagram, FaFacebookF, FaTwitter, FaTiktok, FaYoutube
 } from "react-icons/fa";
 
@@ -39,7 +39,7 @@ export default function Home() {
         >
           <h2 className="text-4xl font-bold text-yellow-400 text-center mb-10">Características</h2>
           <p className="text-lg text-gray-300 max-w-3xl mx-auto leading-8">
-            Si desea someterse a un cambio de imagen y regresar a casa como una nueva persona, visite el salón de belleza que opera en el lugar. Los propietarios de automóviles tienen estacionamientos. Hay una terraza de recreación. El alojamiento tiene acceso gratuito a Internet. Un servicio de desayuno en la cama está incluido en la lista de otros servicios. Aquí puede reservar habitaciones para no fumadores. Hay servicios de un masajista que puede ayudarle a reducir el estrés y la fatiga. Puede utilizar este tipo de tarjetas de pago: Visa, Mastercard, Maestro.
+            Si desea someterse a un cambio de imagen y regresar a casa como una nueva persona, visite el salón de belleza que opera en el lugar. Los propietarios de automóviles tienen estacionamientos. Hay una terraza de recreación. El alojamiento tiene acceso gratuito a Internet. Aquí puede reservar habitaciones para no fumadores. Hay servicios de un masajista que puede ayudarle a reducir el estrés y la fatiga. Puede utilizar este tipo de tarjetas de pago: Visa, Mastercard, Maestro.
           </p>
           <p className="mt-6 text-lg text-gray-400 text-center">El personal del alojamiento habla Italiano, Francés, Español e Inglés.</p>
         </motion.div>
@@ -58,7 +58,6 @@ export default function Home() {
               { icon: <FaWifi />, label: "WiFi en todas las áreas" },
               { icon: <FaParking />, label: "Parking privado y gratuito" },
               { icon: <FaGlassCheers />, label: "Vino / champagne" },
-              { icon: <FaUtensils />, label: "Desayuno en la habitación" },
               { icon: <FaKey />, label: "Check-in privado" },
               { icon: <FaCouch />, label: "Terraza de recreación" },
               { icon: <FaVideo />, label: "CCTV en áreas comunes" },
