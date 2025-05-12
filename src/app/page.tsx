@@ -1,15 +1,39 @@
 "use client"
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link"
 import {
-  FaWifi, FaParking, FaGlassCheers, FaKey, FaFireExtinguisher, FaSnowflake,
-  FaSmokingBan, FaLock, FaVideo, FaUserShield, FaCouch,
-  FaInstagram, FaFacebookF, FaTwitter, FaTiktok, FaYoutube
+  FaWifi, FaParking, FaCity, FaGlassCheers, FaKey, FaFireExtinguisher, FaSnowflake,
+  FaSmokingBan, FaLock, FaVideo, FaUserShield, FaUtensils, FaCouch, FaBath,
+  FaDoorClosed, FaInstagram, FaFacebookF, FaTwitter, FaTiktok, FaYoutube
 } from "react-icons/fa";
 
 export default function Home() {
   return (
     <main className="bg-black text-white min-h-screen font-sans">
+      <header className="w-full bg-zinc-900 px-6 py-4 flex justify-between items-center text-xl font-bold uppercase">
+        <div className="flex items-center gap-6">
+          <Link href="#"><span className="border-b border-yellow-400 pb-0.5">Home</span></Link>
+          <div className="relative group">
+            <button className="flex items-center gap-1">Languages ▾</button>
+            <div className="absolute hidden group-hover:block bg-black border border-zinc-700 mt-2 p-2 text-sm">
+              <Link href="/es"><div className="hover:text-yellow-400">Español</div></Link>
+              <Link href="/en"><div className="hover:text-yellow-400">English</div></Link>
+              <Link href="/it"><div className="hover:text-yellow-400">Italiano</div></Link>
+            </div>
+          </div>
+          <Link href="/"><span className="hover:text-yellow-400">Your Host</span></Link>
+        </div>
+        <div className="flex flex-col items-center">
+          <Image src="/images/logo.webp" alt="Logo" width={320} height={320} />
+        </div>
+        <div className="flex items-center gap-6">
+          <Link href="https://facebook.com"><span className="hover:text-yellow-400">Facebook</span></Link>
+          <Link href="https://booking.com"><span className="hover:text-yellow-400">Booking.com</span></Link>
+          <Link href="https://airbnb.com"><span className="hover:text-yellow-400">Airbnb.com</span></Link>
+        </div>
+      </header>
+
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center">
         <Image
@@ -26,7 +50,6 @@ export default function Home() {
           className="text-center z-10"
         >
           <h1 className="text-5xl md:text-7xl font-bold text-yellow-400">Sunrise Residence</h1>
-          <p className="mt-4 text-xl text-white">Tu espacio ideal en el corazón del paraíso</p>
         </motion.div>
       </section>
 
@@ -37,14 +60,59 @@ export default function Home() {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1 }}
         >
-          <h2 className="text-4xl font-bold text-yellow-400 text-center mb-10">Características</h2>
+          <h2 className="text-4xl font-bold text-yellow-400 text-center mb-10">Benvenuto</h2>
           <p className="text-lg text-gray-300 max-w-3xl mx-auto leading-8">
-            Si desea someterse a un cambio de imagen y regresar a casa como una nueva persona, visite el salón de belleza que opera en el lugar. Los propietarios de automóviles tienen estacionamientos. Hay una terraza de recreación. El alojamiento tiene acceso gratuito a Internet. Aquí puede reservar habitaciones para no fumadores. Hay servicios de un masajista que puede ayudarle a reducir el estrés y la fatiga. Puede utilizar este tipo de tarjetas de pago: Visa, Mastercard, Maestro.
+"Sunrise Residence" si tratta di un appartamento recentemente ristrutturato e offre alloggio ad Alba. Questa sistemazione offre una vista sul cortile interno e un balcone. L'appartamento dispone di camere climatizzate, parcheggio privato gratuito e connessione Wi-Fi gratuita.
           </p>
-          <p className="mt-6 text-lg text-gray-400 text-center">El personal del alojamiento habla Italiano, Francés, Español e Inglés.</p>
         </motion.div>
       </section>
+      
+      {/* Sobre el Alojamiento */}
+      <section className="py-20 px-6 md:px-20 bg-zinc-800">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+        >
+          <h2 className="text-4xl font-bold text-yellow-400 text-center mb-10">Sunrise Residence</h2>
+          <p className="text-lg text-gray-300 max-w-3xl mx-auto leading-8">
+La struttura è composta da due moderni appartamenti completamente attrezzati, con capacità per 4 persone ciascuno. Questa comoda posizione centrale è perfetta per coloro che desiderano visitare la città. Gli appartamenti sono stati progettati per offrire il massimo comfort e un soggiorno indimenticabile.
+          </p>
+        </motion.div>
+      </section>
+       <section className="bg-black py-20 px-6 md:px-20 grid gap-16">
+        <div className="grid md:grid-cols-2 gap-8 items-center">
+          <Image src="/images/terraza.webp" alt="Terraza" width={600} height={400} className="rounded-lg" />
+          <div>
+            <h3 className="text-yellow-400 text-2xl font-bold mb-4">Noi Offriamo</h3>
+            <p className="text-gray-300 leading-7">
+              L'appartamento dispone di terrazza, vista sulla città, area salotto, TV a schermo piatto, angolo cottura completamente attrezzato con lavastoviglie, forno a microonde, tostapane, frigorifero, macchinetta del caffè e bollitore. Il bagno privato è completo di bidet e asciugacapelli.
+            </p>
+          </div>
+        </div>
 
+        <div className="grid md:grid-cols-2 gap-8 items-center md:flex-row-reverse">
+          <Image src="/images/camara.webp" alt="Camera" width={600} height={400} className="rounded-lg" />
+          <div>
+            <h3 className="text-yellow-400 text-2xl font-bold mb-4">Spazi confortevoli</h3>
+            <p className="text-gray-300 leading-7 mb-4">
+              Camere confortevoli, con ampia illuminazione. Ulteriori servizi in camera includono vino o champagne.
+            </p>
+            <a href="https://airbnb.com" className="inline-block border border-yellow-400 text-yellow-400 px-4 py-2 rounded hover:bg-yellow-400 hover:text-black transition">VIENI A TROVARCI SU AIRBNB</a>
+          </div>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-8 items-center">
+          <Image src="/images/cocina.webp" alt="Cocina" width={600} height={400} className="rounded-lg" />
+          <div>
+            <h3 className="text-yellow-400 text-2xl font-bold mb-4">Buona Posizione</h3>
+            <p className="text-gray-300 leading-7 mb-4">
+              Vicino all’appartamento potete trovare diversi ristoranti, luoghi di intrattenimento e zone turistiche che vi consigliamo di visitare. L’aeroporto più vicino è quello internazionale di Cuneo, a 46 km dall’appartamento.
+            </p>
+            <a href="https://facebook.com" className="inline-block border border-yellow-400 text-yellow-400 px-4 py-2 rounded hover:bg-yellow-400 hover:text-black transition">IL NOSTRO FACEBOOK</a>
+          </div>
+        </div>
+      </section>
       {/* Instalaciones estilizadas */}
       <section className="py-20 px-6 md:px-20 bg-zinc-800">
         <motion.div
@@ -52,38 +120,35 @@ export default function Home() {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1 }}
         >
-          <h2 className="text-4xl font-bold text-yellow-400 text-center mb-16">Instalaciones</h2>
+          <h2 className="text-4xl font-bold text-yellow-400 text-center mb-16">Servizi</h2>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-10 max-w-6xl mx-auto">
-            {[
-              { icon: <FaWifi />, label: "WiFi en todas las áreas" },
-              { icon: <FaParking />, label: "Parking privado y gratuito" },
-              { icon: <FaGlassCheers />, label: "Vino / champagne" },
-              { icon: <FaKey />, label: "Check-in privado" },
-              { icon: <FaCouch />, label: "Terraza de recreación" },
-              { icon: <FaVideo />, label: "CCTV en áreas comunes" },
-              { icon: <FaFireExtinguisher />, label: "Extintores" },
-              { icon: <FaSnowflake />, label: "Aire acondicionado" },
-              { icon: <FaSmokingBan />, label: "Espacio libre de humo" },
-              { icon: <FaUserShield />, label: "Solo para adultos" },
-              { icon: <FaLock />, label: "Acceso con llave y seguridad 24h" },
-            ].map((item, index) => (
-              <motion.div
-                key={index}
-                whileHover={{ scale: 1.05 }}
-                transition={{ duration: 0.3 }}
-                className="flex items-center gap-4 bg-zinc-900 rounded-xl p-6 shadow-md"
-              >
-                <div className="text-yellow-400 text-3xl">{item.icon}</div>
-                <p className="text-lg text-gray-200">{item.label}</p>
-              </motion.div>
-            ))}
-          </div>
+    {[
+      { icon: <FaCity />, label: "Vista sulla città" },
+      { icon: <FaWifi />, label: "WiFi Gratuito" },
+      { icon: <FaCouch />, label: "Terrazza" },
+      { icon: <FaParking />, label: "Parcheggio Gratuito" },
+      { icon: <FaDoorClosed />, label: "Balcone" },
+      { icon: <FaSnowflake />, label: "Aria condizionata" },
+      { icon: <FaBath />, label: "Bagno Privato" },
+      { icon: <FaSmokingBan />, label: "Camere non fumatori" },
+    ].map((item, index) => (
+      <motion.div
+        key={index}
+        whileHover={{ scale: 1.05 }}
+        transition={{ duration: 0.3 }}
+        className="flex items-center gap-4 bg-zinc-800 rounded-xl p-6 shadow-md"
+      >
+        <div className="text-yellow-400 text-3xl">{item.icon}</div>
+        <p className="text-lg text-gray-200">{item.label}</p>
+      </motion.div>
+    ))}
+  </div>
         </motion.div>
       </section>
 
       {/* Galería */}
       <section className="py-20 px-6 md:px-20">
-        <h2 className="text-3xl md:text-5xl font-semibold text-yellow-400 text-center mb-12">Galería</h2>
+        <h2 className="text-3xl md:text-5xl font-semibold text-yellow-400 text-center mb-12">Gallería</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {['departamento.webp', 'cuarto.webp', 'bano.webp', 'sala.webp', 'comedor.webp'].map((img, idx) => (
             <motion.div
@@ -104,20 +169,6 @@ export default function Home() {
             </motion.div>
           ))}
         </div>
-      </section>
-
-      {/* Sobre el Alojamiento */}
-      <section className="py-20 px-6 md:px-20 bg-zinc-800">
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 1 }}
-        >
-          <h2 className="text-4xl font-bold text-yellow-400 text-center mb-10">Sobre el Alojamiento</h2>
-          <p className="text-lg text-gray-300 max-w-3xl mx-auto leading-8">
-            Ofrecemos un cómodo apartamento equipado con aire acondicionado, secador de pelo, cocina americana, nevera, escritorio, utensilios de planchado y microondas. Disfrutará de una vista de la ciudad desde su ventana.
-          </p>
-        </motion.div>
       </section>
 
       {/* Reserva */}
