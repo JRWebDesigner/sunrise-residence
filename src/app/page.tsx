@@ -468,13 +468,13 @@ La struttura è composta da due moderni appartamenti completamente attrezzati, c
           <a href="https://instagram.com/sunriseresidence" target="_blank" rel="noopener noreferrer" className="hover:text-black text-zinc-800">
             <FaInstagram />
           </a>
-          <a href="https://facebook.com/sunriseresidence" target="_blank" rel="noopener noreferrer" className="hover:text-black text-zinc-800">
+          <a href="https://instagram.com/sunrise_residence_?igshid=YzAwZjE1ZTI0Zg%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" className="hover:text-black text-zinc-800">
             <FaFacebookF />
           </a>
           <a href="https://twitter.com/sunriseresidence" target="_blank" rel="noopener noreferrer" className="hover:text-black text-zinc-800">
             <FaTwitter />
           </a>
-          <a href="https://tiktok.com/@sunriseresidence" target="_blank" rel="noopener noreferrer" className="hover:text-black text-zinc-800">
+          <a href="https://www.tiktok.com/@_sunrise_residence?_t=8hzWij28TIG&_r=1" target="_blank" rel="noopener noreferrer" className="hover:text-black text-zinc-800">
             <FaTiktok />
           </a>
           <a href="https://youtube.com/sunriseresidence" target="_blank" rel="noopener noreferrer" className="hover:text-black text-zinc-800">
