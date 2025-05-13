@@ -72,23 +72,26 @@ export default function Home() {
       </AnimatePresence>
 
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center">
-        <Image
-          src="/images/fachada.webp"
-          layout="fill"
-          objectFit="cover"
-          alt="Fachada Sunrise Residence"
-          className="opacity-40"
-        />
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          className="text-center z-10"
-        >
-          <h1 className="text-5xl md:text-7xl font-bold text-yellow-400">Sunrise Residence</h1>
-        </motion.div>
-      </section>
+      <section className="relative h-[100dvh] sm:h-screen flex items-center justify-center overflow-hidden">
+  <Image
+    src="/images/fachada.webp"
+    fill
+    style={{ objectFit: 'cover', objectPosition: 'center' }}
+    alt="Fachada Sunrise Residence"
+    className="opacity-40"
+    priority
+  />
+  <motion.div
+    initial={{ opacity: 0, y: 50 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 1 }}
+    className="text-center z-10 px-4"
+  >
+    <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-yellow-400">
+      Sunrise Residence
+    </h1>
+  </motion.div>
+</section>
 
       {/* Características */}
       <section className="py-20 px-6 md:px-20 bg-zinc-900 flex md:flex-row flex-col justify-center items-center">
