@@ -34,9 +34,9 @@ export default function Home() {
             </div>
           </div>
           <Link href="/"><span className="hover:text-yellow-400">Your Host</span></Link>
-          <Link href="https://facebook.com"><span className="hover:text-yellow-400">Facebook</span></Link>
-          <Link href="https://booking.com"><span className="hover:text-yellow-400">Booking.com</span></Link>
-          <Link href="https://airbnb.com"><span className="hover:text-yellow-400">Airbnb.com</span></Link>
+          <Link href="https://www.facebook.com/profile.php?id=61553588529798&locale=es_LA"><span className="hover:text-yellow-400">Facebook</span></Link>
+          <Link href="https://www.booking.com/hotel/it/sunrise-veronica.html?aid=964694&app_hotel_id=10680979&checkin=2023-11-15&checkout=2023-11-16&from_sn=android&group_adults=3&group_children=0&label=hotel_details-5WyBiO%401700081590&no_rooms=1&req_adults=3&req_children=0&room1=A%2CA%2CA&lang=en-us&soz=1&lang_changed=1"><span className="hover:text-yellow-400">Booking.com</span></Link>
+          <Link href="https://www.airbnb.it/users/show/475678499"><span className="hover:text-yellow-400">Airbnb.com</span></Link>
         </div>
       </header>
 
@@ -138,7 +138,7 @@ La struttura è composta da due moderni appartamenti completamente attrezzati, c
             <p className="text-gray-300 leading-7 mb-4">
               Camere confortevoli, con ampia illuminazione. Ulteriori servizi in camera includono vino o champagne.
             </p>
-            <a href="https://airbnb.com" className="inline-block border border-yellow-400 text-yellow-400 px-4 py-2 rounded hover:bg-yellow-400 hover:text-black transition">VIENI A TROVARCI SU AIRBNB</a>
+            <a href="https://www.airbnb.it/users/show/475678499" className="inline-block border border-yellow-400 text-yellow-400 px-4 py-2 rounded hover:bg-yellow-400 hover:text-black transition">VIENI A TROVARCI SU AIRBNB</a>
           </div>
         </div>
 
