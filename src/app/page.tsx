@@ -54,7 +54,7 @@ export default function Home() {
               <HiX />
             </button>
 
-            <Link href="#" onClick={() => setOpen(false)}>Home</Link>
+            <Link href="/" onClick={() => setOpen(false)}>Home</Link>
             <div>
               <span>Languages ▾</span>
               <div className="pl-4 mt-2 text-base">
@@ -63,7 +63,7 @@ export default function Home() {
                 <Link href="/it" onClick={() => setOpen(false)}>Italiano</Link>
               </div>
             </div>
-            <Link href="/" onClick={() => setOpen(false)}>Your Host</Link>
+            <Link href="/host" onClick={() => setOpen(false)}>Your Host</Link>
             <Link href="https://facebook.com" onClick={() => setOpen(false)}>Facebook</Link>
             <Link href="https://booking.com" onClick={() => setOpen(false)}>Booking.com</Link>
             <Link href="https://airbnb.com" onClick={() => setOpen(false)}>Airbnb.com</Link>
