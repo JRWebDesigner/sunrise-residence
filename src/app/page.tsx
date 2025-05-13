@@ -11,8 +11,8 @@ import { HiMenu, HiX } from 'react-icons/hi';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export default function Home() {
-  const [menuOpen, setMenuOpen] = useState(false);
-  return (
+  const [open, setOpen] = useState(false);
+   return (
     <main className="bg-black text-white min-h-screen font-sans">
        <header className="w-full bg-zinc-900 px-6 py-4 flex justify-between items-center text-xl font-bold uppercase text-white">
         <button className="md:hidden text-3xl" onClick={() => setOpen(true)}>
