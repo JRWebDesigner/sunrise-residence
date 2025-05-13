@@ -90,9 +90,9 @@ export default function Home() {
       </section>
 
       {/* Características */}
-      <section className="py-20 px-6 md:px-20 bg-zinc-900">
+      <section className="py-20 px-6 md:px-20 bg-zinc-900 flex md:flex-row flex-col justify-center items-center">
          <Image 
-            src="/images/home.jpg" alt="Terraza" width={600} height={400} className="rounded-lg mx-auto" 
+            src="/images/home.jpg" alt="Terraza" width={360} height={360} className="rounded-full mx-auto" 
             />
         <motion.div
           initial={{ opacity: 0 }}
@@ -107,7 +107,8 @@ Sunrise Residence si tratta di un appartamento recentemente ristrutturato e offr
       </section>
       
       {/* Sobre el Alojamiento */}
-      <section className="py-20 px-6 md:px-20 bg-zinc-800">
+      <section className="py-20 px-6 md:px-20 bg-zinc-800 flex md:flex-row flex-col justify-center items-center gap-10">
+      <Image src="/images/sobre.webp" alt="Terraza" width={600} height={400} className="w-[50%]" />
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -130,7 +131,7 @@ La struttura è composta da due moderni appartamenti completamente attrezzati, c
           </div>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 items-center md:flex-row-reverse">
+        <div className="flex justify-around flex-col md:flex-row flex-row-reverse  gap-8 items-center md:flex-row-reverse">
           <Image src="/images/camara.webp" alt="Camera" width={600} height={400} className="rounded-lg" />
           <div>
             <h3 className="text-yellow-400 text-2xl font-bold mb-4">Spazi confortevoli</h3>
@@ -150,6 +151,30 @@ La struttura è composta da due moderni appartamenti completamente attrezzati, c
             </p>
             <a href="https://facebook.com" className="inline-block border border-yellow-400 text-yellow-400 px-4 py-2 rounded hover:bg-yellow-400 hover:text-black transition">IL NOSTRO FACEBOOK</a>
           </div>
+        </div>
+      </section>
+       {/* Galería */}
+      <section className="py-20 px-6 md:px-20">
+        <h2 className="text-3xl md:text-5xl font-semibold text-yellow-400 text-center mb-12">Gallería</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {['departamento.webp', 'cuarto.webp', 'bano.webp', 'sala.webp', 'comedor.webp'].map((img, idx) => (
+            <motion.div
+              key={idx}
+              whileHover={{ scale: 1.05 }}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: idx * 0.1 }}
+              className="overflow-hidden rounded-2xl shadow-lg"
+            >
+              <Image
+                src={`/images/${img}`}
+                width={600}
+                height={400}
+                objectFit="cover"
+                alt={img.split('.')[0]}
+              />
+            </motion.div>
+          ))}
         </div>
       </section>
       {/* Instalaciones estilizadas */}
@@ -185,31 +210,231 @@ La struttura è composta da due moderni appartamenti completamente attrezzati, c
         </motion.div>
       </section>
 
-      {/* Galería */}
-      <section className="py-20 px-6 md:px-20">
-        <h2 className="text-3xl md:text-5xl font-semibold text-yellow-400 text-center mb-12">Gallería</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {['departamento.webp', 'cuarto.webp', 'bano.webp', 'sala.webp', 'comedor.webp'].map((img, idx) => (
-            <motion.div
-              key={idx}
-              whileHover={{ scale: 1.05 }}
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: idx * 0.1 }}
-              className="overflow-hidden rounded-2xl shadow-lg"
-            >
+     <section className="py-20 px-6 md:px-20 bg-zinc-900">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+          className="max-w-5xl mx-auto"
+        >
+          <h2 className="text-4xl font-bold text-yellow-400 text-center mb-12">Caratteristiche dell'edificio</h2>
+          <div className="grid md:grid-cols-2 gap-10 text-gray-300 text-lg leading-8">
+            <div>
+              <h3 className="text-yellow-400 font-semibold mb-2">Cucina</h3>
+              <ul className="list-disc ml-6">
+                <li>Tavolo da pranzo</li>
+                <li>Macchina da caffè</li>
+                <li>Prodotti per le pulizie</li>
+                <li>Tostapane</li>
+                <li>Piano cottura</li>
+                <li>Forno</li>
+                <li>Utensili da cucina</li>
+                <li>Bollitore elettrico</li>
+                <li>Lavatrice</li>
+                <li>Lavastoviglie</li>
+                <li>Forno a microonde</li>
+                <li>Frigorifero</li>
+                <li>Angolo cottura</li>
+              </ul>
+              <h3 className="text-yellow-400 font-semibold mt-6 mb-2">Bagno</h3>
+              <ul className="list-disc ml-6">
+                <li>Carta igienica</li>
+                <li>Bidet</li>
+                <li>Vasca o doccia</li>
+                <li>Bagno privato</li>
+                <li>WC</li>
+                <li>Asciugacapelli</li>
+                <li>Doccia</li>
+              </ul>
+              <h3 className="text-yellow-400 font-semibold mt-6 mb-2">Camera da letto</h3>
+              <ul className="list-disc ml-6">
+                <li>Letto</li>
+                <li>Credenza</li>
+                <li>Comodino</li>
+              </ul>
+              <h3 className="text-yellow-400 font-semibold mt-6 mb-2">Area soggiorno</h3>
+              <ul className="list-disc ml-6">
+                <li>Divano</li>
+                <li>Zona soggiorno</li>
+                <li>Scrivania</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-yellow-400 font-semibold mb-2">Spazi all'aperto</h3>
+              <ul className="list-disc ml-6">
+                <li>Balcone</li>
+                <li>Terrazza</li>
+                <li>Parcheggio gratuito</li>
+              </ul>
+              <h3 className="text-yellow-400 font-semibold mt-6 mb-2">Media e tecnologia</h3>
+              <ul className="list-disc ml-6">
+                <li>Servizio streaming (per es. Netflix)</li>
+                <li>TV a schermo piatto</li>
+                <li>TV</li>
+              </ul>
+              <h3 className="text-yellow-400 font-semibold mt-6 mb-2">Strutture</h3>
+              <ul className="list-disc ml-6">
+                <li>Presa elettrica vicino al letto</li>
+                <li>Stendibiancheria</li>
+                <li>Stand appendiabiti</li>
+                <li>Parquet o pavimento in legno</li>
+                <li>Ferro e asse da stiro</li>
+                <li>Ferro da stiro</li>
+              </ul>
+              <h3 className="text-yellow-400 font-semibold mt-6 mb-2">Protezione e sicurezza</h3>
+              <ul className="list-disc ml-6">
+                <li>Estintori</li>
+                <li>Telecamere a circuito chiuso all'esterno della struttura</li>
+                <li>Telecamere a circuito chiuso nelle zone in comune</li>
+                <li>Accesso con chiavi</li>
+                <li>Sicurezza 24 ore su 24</li>
+              </ul>
+              <h3 className="text-yellow-400 font-semibold mt-6 mb-2">Dintorni della struttura</h3>
+              <ul className="list-disc ml-6">
+                <li><strong>Ristoranti e caffetterie</strong></li>
+                <li>Zenzero & Caffè (50m)</li>
+                <li>Hope's Food (100m)</li>
+                <li>Piccolo Caffè (100m)</li>
+                <li><strong>Bellezze della natura</strong></li>
+                <li>Monte Passo della Bossola (22 km)</li>
+                <li>Mare/oceano Riviera delle Palme (49 km)</li>
+                <li><strong>Turismo</strong></li>
+                <li>San Grato-Pian del Bal Chair Lift (47 km)</li>
+                <li>Pineta (47km)</li>
+                <li>Sapel (47 km)</li>
+                <li><strong>Mezzi pubblici</strong></li>
+                <li>Treno Alba (500 m)</li>
+                <li>Treno Mussotto (2,6 km)</li>
+                <li>Stazione degli autobus (39m)</li>
+                <li>Posteggio dei taxi (100m)</li>
+                <li><strong>Aeroporti più vicini</strong></li>
+                <li>Aeroporto di Cuneo - Levaldigi (35 km)</li>
+                <li>Aeroporto di Turín (62 km)</li>
+                <li>Aeroporto di Genova-Sestri (70 km)</li>
+              </ul>
+            </div>
+          </div>
+        </motion.div>
+      </section>
+      <section className="py-20 px-6 md:px-20 bg-zinc-800">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+          className="max-w-4xl mx-auto"
+        >
+          <h2 className="text-4xl font-bold text-yellow-400 text-center mb-12 uppercase tracking-wide">
+            Places to Visit in Alba
+          </h2>
+          <div className="space-y-10 text-gray-300 text-lg leading-8">
+            <div>
               <Image
-                src={`/images/${img}`}
+                src={`/images/atr1.webp`}
                 width={600}
                 height={400}
                 objectFit="cover"
-                alt={img.split('.')[0]}
+                alt='imagen'
+                className="rounded-3xl mx-auto mb-7"
               />
-            </motion.div>
-          ))}
-        </div>
+              <h3 className="text-yellow-400 text-2xl font-semibold mb-2">The International Truffle Fair</h3>
+              <p>
+                È la manifestazione enogastronomica più importante del Piemonte. Ogni anno nel mese di ottobre, per quasi due mesi, Alba e i suoi dintorni celebrano il pregiato tubero con un ricchissimo programma di eventi tra mostre, esposizioni, cooking show, incontri e degustazioni.
+              </p>
+            </div>
+            <div>
+                <Image
+                    src={`/images/atr1.webp`}
+                    width={600}
+                    height={400}
+                    objectFit="cover"
+                    alt='imagen'
+                    className="rounded-3xl mx-auto  mb-7"
+                  />
+              <h3 className="text-yellow-400 text-2xl font-semibold mb-2">The International Truffle Fair</h3>
+              <p>
+                Il tartufo, frutto prezioso e raro della terra, viene celebrato in molte città italiane in diversi periodi dell'anno. Il tartufo bianco e nero sono spesso presenti sui banchi di degustazione delle tante manifestazioni autunnali o nei primi mesi dell'anno dedicate a loro e agli altri prodotti legati a questo tubero. Se sei un amante del tartufo e una buona forchetta, non perderti questi eventi!
+              </p>
+            </div>
+            <div>
+                <Image
+                    src={`/images/atr1.webp`}
+                    width={600}
+                    height={400}
+                    objectFit="cover"
+                    alt='imagen'
+                    className="rounded-3xl mx-auto mb-7"
+                  />
+              <h3 className="text-yellow-400 text-2xl font-semibold mb-2">The International Truffle Fair</h3>
+              <p>
+                Il cuore della Fiera del Tartufo d'Alba è, come ogni anno, il Mercato Mondiale del Tartufo Bianco d'Alba, il luogo dove acquistare i tartufi del territorio del Monferrato, del Roreo e delle Langhe. All'interno di quest'area, inoltre, è presente anche lo spazio dedicato alla cucina e denominato Alba Truffle Show. Si tratta di un grande contenitore di eventi gastronomici e culturali che celebrano l'eccellenza del sapore prodotto. Nei weekend della fiera saranno presenti chef nazionali e internazionali, scrittori, artisti, chef locali e designer.
+              </p>
+            </div>
+          </div>
+        </motion.div>
       </section>
+      <section className="bg-black py-20 px-6 md:px-20">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+          className="max-w-6xl mx-auto space-y-16"
+        >
+          <div className="w-full aspect-video rounded-lg overflow-hidden shadow-lg">
+            <iframe
+              className="w-full h-full"
+              src="https://www.youtube.com/embed/0dZ9ePGGjtc"
+              title="Fiera Internazionale del Tartufo Bianco d'Alba"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
 
+          <div className="grid md:grid-cols-2 gap-12">
+            <div className="text-center space-y-4">
+              <Image src="/images/barolo1.webp" alt="Barolo" width={600} height={400} className="mx-auto rounded-lg" />
+              <h3 className="text-yellow-400 text-xl font-bold">Barolo</h3>
+              <p className="text-gray-300">
+                Barolo è uno degli antichi comuni nel cui territorio si può coltivare l’uva Nebbiolo, utilizzata per produrre il famoso vino da cui il vino prende il nome. Oggi questa cittadina è conosciuta in tutto il mondo per la sua offerta enogastronomica e culturale.
+              </p>
+            </div>
+            <div className="text-center space-y-4">
+              <div className="w-full aspect-video rounded-lg overflow-hidden shadow-lg">
+                <iframe
+                  className="w-full h-full"
+                  src="https://www.youtube.com/embed/VmVKNWbnt6g"
+                  title="Video Barolo"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
+              <h3 className="text-yellow-400 text-xl font-bold">Barolo</h3>
+              <p className="text-gray-300">
+                Uno di questi è il “Barolo Wine Festival”, che si celebra la seconda domenica di settembre e attira l’attenzione dei turisti, anche internazionali.
+              </p>
+            </div>
+          </div>
+        </motion.div>
+      </section>
+      <section className="py-20 px-6 md:px-20 bg-zinc-900">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+          className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center"
+        >
+          <div>
+            <Image src="/images/testimonio.webp" alt="Testimonial" width={600} height={400} className="rounded-full shadow-lg" />
+          </div>
+          <div className="text-gray-300 text-xl leading-relaxed">
+            <p className="italic text-white text-2xl mb-4">
+              &ldquo;Accoglienza super cordiale. Appartamento pulito e ben attrezzato. La posizione è ottima vicino al centro.&rdquo;
+            </p>
+            <p className="text-yellow-400 font-semibold">Michel (Svizzera)</p>
+          </div>
+        </motion.div>
+      </section>
       {/* Reserva */}
       <section className="py-20 px-6 md:px-20">
         <motion.div
