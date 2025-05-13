@@ -20,7 +20,7 @@ export default function Home() {
         </button>
 
         <div className="flex flex-col items-center">
-          <Image src="/images/logo.webp" alt="Logo" width={160} height={160} className="w-20 md:w-40" />
+          <Image src="/images/logo.webp" alt="Logo" width={160} height={160} className="w-40" />
         </div>
 
         <div className="hidden md:flex items-center gap-6">
