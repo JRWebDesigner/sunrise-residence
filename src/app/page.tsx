@@ -21,7 +21,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 export default function Home() {
    const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
-  const images = Array.from({ length: 40 }, (_, i) => `/images/imag-${i + 1}.webp`);
+  const images = Array.from({ length: 40 }, (_, i) => `/images/img-${i + 1}.webp`);
 
   const [open, setOpen] = useState(false);
    return (
