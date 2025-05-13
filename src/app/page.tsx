@@ -9,6 +9,7 @@ import {
   FaDoorClosed, FaInstagram, FaFacebookF, FaTwitter, FaTiktok, FaYoutube
 } from "react-icons/fa";
 import { HiMenu, HiX } from 'react-icons/hi';
+import { motion, AnimatePresence } from 'framer-motion';
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
