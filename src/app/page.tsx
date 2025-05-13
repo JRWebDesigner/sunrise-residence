@@ -115,7 +115,7 @@ export default function Home() {
         >
           <h2 className="text-4xl font-bold text-yellow-400 text-center mb-10">Benvenuto</h2>
           <p className="text-lg text-gray-300 max-w-3xl mx-auto leading-8">
-Sunrise Residence si tratta di un appartamento recentemente ristrutturato e offre alloggio ad Alba. Questa sistemazione offre una vista sul cortile interno e un balcone. L appartamento dispone di camere climatizzate, parcheggio privato gratuito e connessione Wi-Fi gratuita.
+Sunrise Residence si tratta di un appartamento recentemente ristrutturato e offre alloggio ad Alba. Questa sistemazione offre una vista sul cortile interno e un balcone. L&apos;appartamento dispone di camere climatizzate, parcheggio privato gratuito e connessione Wi-Fi gratuita.
           </p>
         </motion.div>
       </section>
@@ -140,7 +140,7 @@ La struttura è composta da due moderni appartamenti completamente attrezzati, c
           <div>
             <h3 className="text-yellow-400 text-2xl font-bold mb-4">Noi Offriamo</h3>
             <p className="text-gray-300 leading-7">
-              L appartamento dispone di terrazza, vista sulla città, area salotto, TV a schermo piatto, angolo cottura completamente attrezzato con lavastoviglie, forno a microonde, tostapane, frigorifero, macchinetta del caffè e bollitore. Il bagno privato è completo di bidet e asciugacapelli.
+              L&apos;appartamento dispone di terrazza, vista sulla città, area salotto, TV a schermo piatto, angolo cottura completamente attrezzato con lavastoviglie, forno a microonde, tostapane, frigorifero, macchinetta del caffè e bollitore. Il bagno privato è completo di bidet e asciugacapelli.
             </p>
           </div>
         </div>
@@ -161,7 +161,7 @@ La struttura è composta da due moderni appartamenti completamente attrezzati, c
           <div>
             <h3 className="text-yellow-400 text-2xl font-bold mb-4">Buona Posizione</h3>
             <p className="text-gray-300 leading-7 mb-4">
-              Vicino all appartamento potete trovare diversi ristoranti, luoghi di intrattenimento e zone turistiche che vi consigliamo di visitare. L aeroporto più vicino è quello internazionale di Cuneo, a 46 km dall’appartamento.
+              Vicino all&apos;appartamento potete trovare diversi ristoranti, luoghi di intrattenimento e zone turistiche che vi consigliamo di visitare. L &apos;aeroporto più vicino è quello internazionale di Cuneo, a 46 km dall’appartamento.
             </p>
             <a href="https://facebook.com" className="inline-block border border-yellow-400 text-yellow-400 px-4 py-2 rounded hover:bg-yellow-400 hover:text-black transition">IL NOSTRO FACEBOOK</a>
           </div>
@@ -273,7 +273,7 @@ La struttura è composta da due moderni appartamenti completamente attrezzati, c
               </ul>
               <h3 className="text-yellow-400 font-semibold mt-6 mb-2">Camera da letto</h3>
               <ul className="list-disc ml-6">
-                <li>Letto</li>
+                <li>Matrimoniale e singole</li>
                 <li>Credenza</li>
                 <li>Comodino</li>
               </ul>
@@ -295,7 +295,6 @@ La struttura è composta da due moderni appartamenti completamente attrezzati, c
               <ul className="list-disc ml-6">
                 <li>Servizio streaming (per es. Netflix)</li>
                 <li>TV a schermo piatto</li>
-                <li>TV</li>
               </ul>
               <h3 className="text-yellow-400 font-semibold mt-6 mb-2">Strutture</h3>
               <ul className="list-disc ml-6">
@@ -304,7 +303,6 @@ La struttura è composta da due moderni appartamenti completamente attrezzati, c
                 <li>Stand appendiabiti</li>
                 <li>Parquet o pavimento in legno</li>
                 <li>Ferro e asse da stiro</li>
-                <li>Ferro da stiro</li>
               </ul>
               <h3 className="text-yellow-400 font-semibold mt-6 mb-2">Protezione e sicurezza</h3>
               <ul className="list-disc ml-6">
@@ -336,6 +334,7 @@ La struttura è composta da due moderni appartamenti completamente attrezzati, c
                 <li>Aeroporto di Cuneo - Levaldigi (35 km)</li>
                 <li>Aeroporto di Turín (62 km)</li>
                 <li>Aeroporto di Genova-Sestri (70 km)</li>
+                <li>Aeroporto di Malpensa-Milano</li>
               </ul>
             </div>
           </div>
@@ -363,7 +362,7 @@ La struttura è composta da due moderni appartamenti completamente attrezzati, c
               />
               <h3 className="text-yellow-400 text-2xl font-semibold mb-2">The International Truffle Fair</h3>
               <p>
-                È la manifestazione enogastronomica più importante del Piemonte. Ogni anno nel mese di ottobre, per quasi due mesi, Alba e i suoi dintorni celebrano il pregiato tubero con un ricchissimo programma di eventi tra mostre, esposizioni, cooking show, incontri e degustazioni.
+                È la manifestazione enogastronomica più importante del Piemonte. Ogni anno nel mese di ottobre, per quasi due mesi, Alba e i suoi dintorni celebrano il pregiato Tarturo d&apos;alba con un ricchissimo programma di eventi tra mostre, esposizioni, cooking show, incontri e degustazioni.
               </p>
             </div>
             <div>
@@ -391,7 +390,7 @@ La struttura è composta da due moderni appartamenti completamente attrezzati, c
                   />
               <h3 className="text-yellow-400 text-2xl font-semibold mb-2">The International Truffle Fair</h3>
               <p>
-                Il cuore della Fiera del Tartufo d&apos;Alba è, come ogni anno, il Mercato Mondiale del Tartufo Bianco d&apos;Alba, il luogo dove acquistare i tartufi del territorio del Monferrato, del Roreo e delle Langhe. All&apos;interno di quest&apos;area, inoltre, è presente anche lo spazio dedicato alla cucina e denominato Alba Truffle Show. Si tratta di un grande contenitore di eventi gastronomici e culturali che celebrano l eccellenza del sapore prodotto. Nei weekend della fiera saranno presenti chef nazionali e internazionali, scrittori, artisti, chef locali e designer.
+                Il cuore della Fiera del Tartufo d&apos;Alba è, come ogni anno, il Mercato Mondiale del Tartufo Bianco d&apos;Alba, il luogo dove acquistare i tartufi del territorio del Monferrato, del Roreo e delle Langhe. All&apos;interno di quest&apos;area, inoltre, è presente anche lo spazio dedicato alla cucina e denominato Alba Truffle Show. Si tratta di un grande contenitore di eventi gastronomici e culturali che celebrano l&apos;eccellenza del sapore prodotto. Nei weekend della fiera saranno presenti chef nazionali e internazionali, scrittori, artisti, chef locali e designer.
               </p>
             </div>
           </div>
