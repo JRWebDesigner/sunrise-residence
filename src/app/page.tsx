@@ -72,13 +72,13 @@ export default function Home() {
       </AnimatePresence>
 
       {/* Hero Section */}
-      <section className="relative h-[100dvh] sm:h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative h-[40dvh] md:h-[100dvh] flex items-center justify-center overflow-hidden">
   <Image
     src="/images/fachada.webp"
     fill
-    style={{ objectFit: 'cover', objectPosition: 'center' }}
+    style={{ objectPosition: 'center' }}
     alt="Fachada Sunrise Residence"
-    className="opacity-40"
+    className="opacity-40 md:object-cover object-contain"
     priority
   />
   <motion.div
