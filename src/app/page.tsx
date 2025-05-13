@@ -131,7 +131,7 @@ La struttura è composta da due moderni appartamenti completamente attrezzati, c
           </div>
         </div>
 
-        <div className="flex justify-around flex-col md:flex-row flex-row-reverse  gap-8 items-center md:flex-row-reverse">
+        <div className="flex justify-around flex-col md:flex-row gap-8 items-center md:flex-row-reverse">
           <Image src="/images/camara.webp" alt="Camera" width={600} height={400} className="rounded-lg" />
           <div>
             <h3 className="text-yellow-400 text-2xl font-bold mb-4">Spazi confortevoli</h3>
@@ -217,7 +217,7 @@ La struttura è composta da due moderni appartamenti completamente attrezzati, c
           transition={{ duration: 1 }}
           className="max-w-5xl mx-auto"
         >
-          <h2 className="text-4xl font-bold text-yellow-400 text-center mb-12">Caratteristiche dell'edificio</h2>
+          <h2 className="text-4xl font-bold text-yellow-400 text-center mb-12">Caratteristiche dell&apos;edificio</h2>
           <div className="grid md:grid-cols-2 gap-10 text-gray-300 text-lg leading-8">
             <div>
               <h3 className="text-yellow-400 font-semibold mb-2">Cucina</h3>
@@ -260,7 +260,7 @@ La struttura è composta da due moderni appartamenti completamente attrezzati, c
               </ul>
             </div>
             <div>
-              <h3 className="text-yellow-400 font-semibold mb-2">Spazi all'aperto</h3>
+              <h3 className="text-yellow-400 font-semibold mb-2">Spazi all&apos;aperto</h3>
               <ul className="list-disc ml-6">
                 <li>Balcone</li>
                 <li>Terrazza</li>
@@ -284,7 +284,7 @@ La struttura è composta da due moderni appartamenti completamente attrezzati, c
               <h3 className="text-yellow-400 font-semibold mt-6 mb-2">Protezione e sicurezza</h3>
               <ul className="list-disc ml-6">
                 <li>Estintori</li>
-                <li>Telecamere a circuito chiuso all'esterno della struttura</li>
+                <li>Telecamere a circuito chiuso all&apos;esterno della struttura</li>
                 <li>Telecamere a circuito chiuso nelle zone in comune</li>
                 <li>Accesso con chiavi</li>
                 <li>Sicurezza 24 ore su 24</li>
@@ -293,7 +293,7 @@ La struttura è composta da due moderni appartamenti completamente attrezzati, c
               <ul className="list-disc ml-6">
                 <li><strong>Ristoranti e caffetterie</strong></li>
                 <li>Zenzero & Caffè (50m)</li>
-                <li>Hope's Food (100m)</li>
+                <li>Hope&apos;s Food (100m)</li>
                 <li>Piccolo Caffè (100m)</li>
                 <li><strong>Bellezze della natura</strong></li>
                 <li>Monte Passo della Bossola (22 km)</li>
@@ -352,7 +352,7 @@ La struttura è composta da due moderni appartamenti completamente attrezzati, c
                   />
               <h3 className="text-yellow-400 text-2xl font-semibold mb-2">The International Truffle Fair</h3>
               <p>
-                Il tartufo, frutto prezioso e raro della terra, viene celebrato in molte città italiane in diversi periodi dell'anno. Il tartufo bianco e nero sono spesso presenti sui banchi di degustazione delle tante manifestazioni autunnali o nei primi mesi dell'anno dedicate a loro e agli altri prodotti legati a questo tubero. Se sei un amante del tartufo e una buona forchetta, non perderti questi eventi!
+                Il tartufo, frutto prezioso e raro della terra, viene celebrato in molte città italiane in diversi periodi dell&apos;anno. Il tartufo bianco e nero sono spesso presenti sui banchi di degustazione delle tante manifestazioni autunnali o nei primi mesi dell&apos;anno dedicate a loro e agli altri prodotti legati a questo tubero. Se sei un amante del tartufo e una buona forchetta, non perderti questi eventi!
               </p>
             </div>
             <div>
@@ -366,7 +366,7 @@ La struttura è composta da due moderni appartamenti completamente attrezzati, c
                   />
               <h3 className="text-yellow-400 text-2xl font-semibold mb-2">The International Truffle Fair</h3>
               <p>
-                Il cuore della Fiera del Tartufo d'Alba è, come ogni anno, il Mercato Mondiale del Tartufo Bianco d'Alba, il luogo dove acquistare i tartufi del territorio del Monferrato, del Roreo e delle Langhe. All'interno di quest'area, inoltre, è presente anche lo spazio dedicato alla cucina e denominato Alba Truffle Show. Si tratta di un grande contenitore di eventi gastronomici e culturali che celebrano l'eccellenza del sapore prodotto. Nei weekend della fiera saranno presenti chef nazionali e internazionali, scrittori, artisti, chef locali e designer.
+                Il cuore della Fiera del Tartufo d&apos;Alba è, come ogni anno, il Mercato Mondiale del Tartufo Bianco d&apos;Alba, il luogo dove acquistare i tartufi del territorio del Monferrato, del Roreo e delle Langhe. All&apos;interno di quest&apos;area, inoltre, è presente anche lo spazio dedicato alla cucina e denominato Alba Truffle Show. Si tratta di un grande contenitore di eventi gastronomici e culturali che celebrano l'eccellenza del sapore prodotto. Nei weekend della fiera saranno presenti chef nazionali e internazionali, scrittori, artisti, chef locali e designer.
               </p>
             </div>
           </div>
@@ -383,7 +383,7 @@ La struttura è composta da due moderni appartamenti completamente attrezzati, c
             <iframe
               className="w-full h-full"
               src="https://www.youtube.com/embed/0dZ9ePGGjtc"
-              title="Fiera Internazionale del Tartufo Bianco d'Alba"
+              title="Fiera Internazionale del Tartufo Bianco d&apos;Alba"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
