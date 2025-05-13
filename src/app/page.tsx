@@ -20,7 +20,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 export default function Home() {
   const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null);
-  const images = Array.from({ length: 40 }, (_, i) => `/images/img-${i + 1}.webp`);
+  const images = Array.from({ length: 32 }, (_, i) => `/images/img-${i + 1}.webp`);
 
   const [open, setOpen] = useState(false);
    return (
@@ -105,8 +105,8 @@ export default function Home() {
 
       {/* Características */}
       <section className="py-20 px-6 md:px-20 bg-zinc-900 flex md:flex-row flex-col justify-center items-center">
-         <Image 
-            src="/images/home.jpg" alt="Terraza" width={360} height={360} className="rounded-full mx-auto w-full md:w-auto" 
+         <img 
+            src="/images/home.jpg" alt="Terraza" width={360} height={360} className="rounded-full mx-auto" 
             />
         <motion.div
           initial={{ opacity: 0 }}
@@ -122,7 +122,7 @@ Sunrise Residence si tratta di un appartamento recentemente ristrutturato e offr
       
       {/* Sobre el Alojamiento */}
       <section className="py-20 px-6 md:px-20 bg-zinc-800 flex md:flex-row flex-col justify-center items-center gap-10">
-      <Image src="/images/sobre.webp" alt="Terraza" width={600} height={400} className="w-[50%]" />
+      <Image src="/images/sobre.webp" alt="Terraza" width={600} height={400} className="w-[95%] md:w-[50%]" />
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
