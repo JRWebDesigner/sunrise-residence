@@ -10,6 +10,7 @@ import {
 import { HiMenu, HiX } from 'react-icons/hi';
 import { motion, AnimatePresence } from 'framer-motion';
 
+
 export default function Home() {
   const [open, setOpen] = useState(false);
    return (
@@ -24,7 +25,7 @@ export default function Home() {
         </div>
 
         <div className="hidden md:flex items-center gap-6">
-          <Link href="#"><span className="border-b border-yellow-400 pb-0.5">Home</span></Link>
+          <Link href="/"><span className="pb-0.5">Home</span></Link>
           <div className="relative group">
             <button className="flex items-center gap-1">Languages ▾</button>
             <div className="absolute hidden group-hover:block bg-black border border-zinc-700 mt-2 p-2 text-sm">
@@ -33,7 +34,7 @@ export default function Home() {
               <Link href="/it"><div className="hover:text-yellow-400">Italiano</div></Link>
             </div>
           </div>
-          <Link href="/"><span className="hover:text-yellow-400">Your Host</span></Link>
+          <Link href="/host"><span className="hover:text-yellow-400">Your Host</span></Link>
           <Link href="https://www.facebook.com/profile.php?id=61553588529798&locale=es_LA"><span className="hover:text-yellow-400">Facebook</span></Link>
           <Link href="https://www.booking.com/hotel/it/sunrise-veronica.html?aid=964694&app_hotel_id=10680979&checkin=2023-11-15&checkout=2023-11-16&from_sn=android&group_adults=3&group_children=0&label=hotel_details-5WyBiO%401700081590&no_rooms=1&req_adults=3&req_children=0&room1=A%2CA%2CA&lang=en-us&soz=1&lang_changed=1"><span className="hover:text-yellow-400">Booking.com</span></Link>
           <Link href="https://www.airbnb.it/users/show/475678499"><span className="hover:text-yellow-400">Airbnb.com</span></Link>
@@ -288,7 +289,7 @@ La struttura è composta da due moderni appartamenti completamente attrezzati, c
                 <li>Telecamere a circuito chiuso nelle zone in comune</li>
                 <li>Accesso con chiavi</li>
                 <li>Sicurezza 24 ore su 24</li>
-              </ul>
+              </ul>Michel
               <h3 className="text-yellow-400 font-semibold mt-6 mb-2">Dintorni della struttura</h3>
               <ul className="list-disc ml-6">
                 <li><strong>Ristoranti e caffetterie</strong></li>
@@ -343,7 +344,7 @@ La struttura è composta da due moderni appartamenti completamente attrezzati, c
             </div>
             <div>
                 <Image
-                    src={`/images/atr1.webp`}
+                    src={`/images/atr2.webp`}
                     width={600}
                     height={400}
                     objectFit="cover"
@@ -357,7 +358,7 @@ La struttura è composta da due moderni appartamenti completamente attrezzati, c
             </div>
             <div>
                 <Image
-                    src={`/images/atr1.webp`}
+                    src={`/images/atr3.webp`}
                     width={600}
                     height={400}
                     objectFit="cover"
@@ -435,23 +436,6 @@ La struttura è composta da due moderni appartamenti completamente attrezzati, c
           </div>
         </motion.div>
       </section>
-      {/* Reserva */}
-      <section className="py-20 px-6 md:px-20">
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 1 }}
-          className="text-center"
-        >
-          <h2 className="text-4xl font-bold text-yellow-400 mb-6">Reserva en Línea</h2>
-          <p className="text-lg text-gray-300 mb-6 max-w-xl mx-auto">
-            Puede reservar SUNRISE Residence rápidamente y con ganancias en nuestro sitio web. Completar la solicitud tomará un par de minutos, y la confirmación de la reserva se envía a su correo electrónico de inmediato.
-          </p>
-          <button className="bg-yellow-400 text-black px-6 py-3 rounded-full font-semibold hover:scale-105 transition">
-            Reservar Ahora
-          </button>
-        </motion.div>
-      </section>
 
       {/* Redes Sociales */}
       <section className="bg-yellow-400 text-black py-10 text-center">
@@ -507,11 +491,45 @@ La struttura è composta da due moderni appartamenti completamente attrezzati, c
           </form>
         </motion.div>
       </section>
-
+<section className='w-full bg-black py-20 px-6 md:px-20'>
+        <div className='max-w-6xl mx-auto'>
+          <div className='w-full h-[450px] overflow-hidden rounded-lg shadow-lg'>
+            <iframe
+              title='Sunrise Residence Location'
+              src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2836.255472956018!2d8.031658975106744!3d44.69398288449983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d2b36f357e8a51%3A0xf0bb5e1e3fadc81c!2sCorso%20Langhe%2C%207%2C%2012051%20Alba%20CN%2C%20Italia!5e0!3m2!1ses-419!2sbo!4v1747136383520!5m2!1ses-419!2sbo'
+              width='100%'
+              height='100%'
+              style={{ border: 0 }}
+              allowFullScreen
+              loading='lazy'
+              referrerPolicy='no-referrer-when-downgrade'
+            ></iframe>
+          </div>
+        </div>
+      </section>
       {/* Contacto */}
-      <footer className="py-6 text-center text-sm text-gray-400">
-        <p>Contáctanos: +39 331 741 5002</p>
-        <p>&copy; 2025 Sunrise Residence. Todos los derechos reservados.</p>
+        <footer className='bg-zinc-900 text-gray-300 text-sm py-12 px-6 md:px-20'>
+        <div className='max-w-6xl mx-auto flex flex-col items-center gap-6'>
+          <nav className='flex gap-6 text-xs uppercase tracking-wide'>
+            <a href='#' className='border-b border-yellow-400 text-yellow-400'>Home</a>
+            <a href='#host' className='hover:text-yellow-400'>Your Host</a>
+            <a href='https://www.facebook.com/profile.php?id=61553588529798&locale=es_LA' className='hover:text-yellow-400'>Facebook</a>
+            <a href='https://www.booking.com/hotel/it/sunrise-veronica.html?aid=964694&app_hotel_id=10680979&checkin=2023-11-15&checkout=2023-11-16&from_sn=android&group_adults=3&group_children=0&label=hotel_details-5WyBiO%401700081590&no_rooms=1&req_adults=3&req_children=0&room1=A%2CA%2CA&lang=en-us&soz=1&lang_changed=1' className='hover:text-yellow-400'>Booking.com</a>
+            <a href='https://www.airbnb.it/users/show/475678499' className='hover:text-yellow-400'>Airbnb.com</a>
+          </nav>
+          <div className='flex gap-6 text-xl'>
+            <a href='https://www.facebook.com/profile.php?id=61553588529798&locale=es_LA'><FaFacebookF /></a>
+            <a href='https://www.instagram.com/sunrise_residence_/'><FaInstagram /></a>
+            <a href='https://www.tiktok.com/@_sunrise_residence?_t=8hzWij28TIG&_r=1'><FaTiktok /></a>
+            <a href='https://www.x.com/AlbaResiden'><FaTwitter /></a>
+            <a href='https://www.youtube.com/@SunriseResidence0'><FaYoutube /></a>
+          </div>
+          <div className='text-center'>
+            <h4 className='font-semibold text-white'>Sunrise Residence</h4>
+            <p>Corso Langhe 1, 12051 Alba Cuneo, Italy</p>
+            <p className='text-yellow-400'>+39 331 741 5002</p>
+          </div>
+        </div>
       </footer>
     </main>
   );
