@@ -367,7 +367,7 @@ La struttura è composta da due moderni appartamenti completamente attrezzati, c
                   />
               <h3 className="text-yellow-400 text-2xl font-semibold mb-2">The International Truffle Fair</h3>
               <p>
-                Il cuore della Fiera del Tartufo d&apos;Alba è, come ogni anno, il Mercato Mondiale del Tartufo Bianco d&apos;Alba, il luogo dove acquistare i tartufi del territorio del Monferrato, del Roreo e delle Langhe. All&apos;interno di quest&apos;area, inoltre, è presente anche lo spazio dedicato alla cucina e denominato Alba Truffle Show. Si tratta di un grande contenitore di eventi gastronomici e culturali che celebrano l'eccellenza del sapore prodotto. Nei weekend della fiera saranno presenti chef nazionali e internazionali, scrittori, artisti, chef locali e designer.
+                Il cuore della Fiera del Tartufo d&apos;Alba è, come ogni anno, il Mercato Mondiale del Tartufo Bianco d&apos;Alba, il luogo dove acquistare i tartufi del territorio del Monferrato, del Roreo e delle Langhe. All&apos;interno di quest&apos;area, inoltre, è presente anche lo spazio dedicato alla cucina e denominato Alba Truffle Show. Si tratta di un grande contenitore di eventi gastronomici e culturali che celebrano l eccellenza del sapore prodotto. Nei weekend della fiera saranno presenti chef nazionali e internazionali, scrittori, artisti, chef locali e designer.
               </p>
             </div>
           </div>
