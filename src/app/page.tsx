@@ -7,7 +7,7 @@ import { Thumbs, Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/thumbs';
 import 'swiper/css/navigation';
-
+import type { Swiper as SwiperType } from 'swiper';
 
 import {
    FaWifi, FaParking, FaCity, FaSnowflake,
@@ -19,8 +19,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 
 export default function Home() {
-   const [thumbsSwiper, setThumbsSwiper] = useState(null);
-
+  const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null);
   const images = Array.from({ length: 40 }, (_, i) => `/images/img-${i + 1}.webp`);
 
   const [open, setOpen] = useState(false);
