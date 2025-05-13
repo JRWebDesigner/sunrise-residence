@@ -106,7 +106,7 @@ export default function Home() {
       {/* Características */}
       <section className="py-20 px-6 md:px-20 bg-zinc-900 flex md:flex-row flex-col justify-center items-center">
          <Image 
-            src="/images/home.jpg" alt="Terraza" width={360} height={360} className="rounded-full mx-auto" 
+            src="/images/home.jpg" alt="Terraza" width={360} height={360} className="rounded-full mx-auto w-full md:w-auto" 
             />
         <motion.div
           initial={{ opacity: 0 }}
