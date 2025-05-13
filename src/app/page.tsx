@@ -2,6 +2,13 @@
 import { useState } from 'react';
 import Image from "next/image";
 import Link from "next/link"
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Thumbs, Navigation } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/thumbs';
+import 'swiper/css/navigation';
+
+
 import {
    FaWifi, FaParking, FaCity, FaSnowflake,
   FaSmokingBan, FaCouch, FaBath,
@@ -12,6 +19,10 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 
 export default function Home() {
+   const [thumbsSwiper, setThumbsSwiper] = useState(null);
+
+  const images = Array.from({ length: 40 }, (_, i) => `/images/gallery/image-${i + 1}.webp`);
+
   const [open, setOpen] = useState(false);
    return (
     <main className="bg-black text-white min-h-screen font-sans">
@@ -158,29 +169,40 @@ La struttura è composta da due moderni appartamenti completamente attrezzati, c
         </div>
       </section>
        {/* Galería */}
-      <section className="py-20 px-6 md:px-20">
-        <h2 className="text-3xl md:text-5xl font-semibold text-yellow-400 text-center mb-12">Gallería</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {['departamento.webp', 'cuarto.webp', 'bano.webp', 'sala.webp', 'comedor.webp'].map((img, idx) => (
-            <motion.div
-              key={idx}
-              whileHover={{ scale: 1.05 }}
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: idx * 0.1 }}
-              className="overflow-hidden rounded-2xl shadow-lg"
-            >
-              <Image
-                src={`/images/${img}`}
-                width={600}
-                height={400}
-                objectFit="cover"
-                alt={img.split('.')[0]}
-              />
-            </motion.div>
+          <section className="py-20 px-6 md:px-20">
+      <h2 className="text-3xl md:text-5xl font-semibold text-yellow-400 text-center mb-12">Gallería</h2>
+
+      <div className="w-full max-w-4xl mx-auto">
+        <Swiper
+          loop
+          navigation
+          modules={[Thumbs, Navigation]}
+          thumbs={{ swiper: thumbsSwiper }}
+          className="mb-6"
+        >
+          {images.map((src, i) => (
+            <SwiperSlide key={`main-${i}`}>
+              <img src={src} alt={`Imagen ${i + 1}`} className="w-full h-96 object-cover rounded-lg" />
+            </SwiperSlide>
           ))}
-        </div>
-      </section>
+        </Swiper>
+
+        <Swiper
+          onSwiper={setThumbsSwiper}
+          loop
+          spaceBetween={10}
+          slidesPerView={6}
+          watchSlidesProgress
+          modules={[Thumbs]}
+        >
+          {images.map((src, i) => (
+            <SwiperSlide key={`thumb-${i}`}>
+              <img src={src} alt={`Miniatura ${i + 1}`} className="w-full h-20 object-cover rounded-md cursor-pointer opacity-70 hover:opacity-100 transition" />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+    </section>
       {/* Instalaciones estilizadas */}
       <section className="py-20 px-6 md:px-20 bg-zinc-800">
         <motion.div
