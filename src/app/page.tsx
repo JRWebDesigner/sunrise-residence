@@ -91,6 +91,9 @@ export default function Home() {
 
       {/* Características */}
       <section className="py-20 px-6 md:px-20 bg-zinc-900">
+         <Image 
+            src="/images/home.jpg" alt="Terraza" width={600} height={400} className="rounded-lg mx-auto" 
+            />
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
