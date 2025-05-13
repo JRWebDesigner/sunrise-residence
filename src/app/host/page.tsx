@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import {
    FaInstagram, FaFacebookF, FaTwitter, FaTiktok, FaYoutube
 } from "react-icons/fa";
-export default function homeHost(){
+export default function HomeHost(){
   const [open, setOpen] = useState(false);
   return(
       <main className="bg-black text-white min-h-screen font-sans">
