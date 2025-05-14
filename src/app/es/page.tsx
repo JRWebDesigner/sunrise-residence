@@ -23,7 +23,7 @@ export default function Page() {
   const images = Array.from({ length: 32 }, (_, i) => `/images/img-${i + 1}.webp`);
 
   const [open, setOpen] = useState(false);
-   return (
+   return(
     <div className="bg-black text-white min-h-screen font-sans">
       <header className="w-full bg-zinc-900 px-6 py-4 flex justify-between items-center text-xl font-bold uppercase text-white">
         <button className="md:hidden text-3xl" onClick={() => setOpen(true)}>
