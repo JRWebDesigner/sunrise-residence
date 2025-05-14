@@ -46,8 +46,6 @@ export default function Home() {
           </div>
           <Link href="/host"><span className="hover:text-yellow-400">Your Host</span></Link>
           <Link href="https://www.facebook.com/profile.php?id=61553588529798&locale=es_LA"><span className="hover:text-yellow-400">Facebook</span></Link>
-          <Link href="https://www.booking.com/hotel/it/sunrise-veronica.html?aid=964694&app_hotel_id=10680979&checkin=2023-11-15&checkout=2023-11-16&from_sn=android&group_adults=3&group_children=0&label=hotel_details-5WyBiO%401700081590&no_rooms=1&req_adults=3&req_children=0&room1=A%2CA%2CA&lang=en-us&soz=1&lang_changed=1"><span className="hover:text-yellow-400">Booking.com</span></Link>
-          <Link href="https://www.airbnb.it/users/show/475678499"><span className="hover:text-yellow-400">Airbnb.com</span></Link>
         </div>
       </header>
 
@@ -75,8 +73,6 @@ export default function Home() {
             </div>
             <Link href="/host" onClick={() => setOpen(false)}>Your Host</Link>
             <Link href="https://www.facebook.com/profile.php?id=61553588529798" onClick={() => setOpen(false)}>Facebook</Link>
-            <Link href="https://www.booking.com/hotel/it/sunrise-veronica.html?aid=964694&app_hotel_id=10680979&checkin=2023-11-15&checkout=2023-11-16&from_sn=android&group_adults=3&group_children=0&label=hotel_details-5WyBiO%401700081590&no_rooms=1&req_adults=3&req_children=0&room1=A%2CA%2CA&lang=en-us&soz=1&lang_changed=1" onClick={() => setOpen(false)}>Booking.com</Link>
-            <Link href="https://www.airbnb.it/users/show/475678499" onClick={() => setOpen(false)}>Airbnb.com</Link>
           </motion.aside>
         )}
       </AnimatePresence>
@@ -158,7 +154,6 @@ Sunrise Residence è un appartamento moderno e spazioso, pensato per offrire un&
             <p className="text-gray-300 leading-7 mb-4">
               Che tu sia in viaggio da solo, in coppia o in famiglia, Sunrise Residence rappresenta una scelta ideale per chi cerca una sistemazione pratica e conveniente. Con la pulizia impeccabile, spazi ben progettati e una posizione strategica, ti garantiamo una permanenza senza stress, alla scoperta di Alba.
             </p>
-            <a href="https://www.airbnb.it/users/show/475678499" className="inline-block border border-yellow-400 text-yellow-400 px-4 py-2 rounded hover:bg-yellow-400 hover:text-black transition">VIENI A TROVARCI SU AIRBNB</a>
           </div>
         </div>
 
@@ -543,8 +538,6 @@ Sunrise Residence è un appartamento moderno e spazioso, pensato per offrire un&
             <a href='#' className='border-b border-yellow-400 text-yellow-400'>Home</a>
             <a href='#host' className='hover:text-yellow-400'>Your Host</a>
             <a href='https://www.facebook.com/profile.php?id=61553588529798&locale=es_LA' className='hover:text-yellow-400'>Facebook</a>
-            <a href='https://www.booking.com/hotel/it/sunrise-veronica.html?aid=964694&app_hotel_id=10680979&checkin=2023-11-15&checkout=2023-11-16&from_sn=android&group_adults=3&group_children=0&label=hotel_details-5WyBiO%401700081590&no_rooms=1&req_adults=3&req_children=0&room1=A%2CA%2CA&lang=en-us&soz=1&lang_changed=1' className='hover:text-yellow-400'>Booking.com</a>
-            <a href='https://www.airbnb.it/users/show/475678499' className='hover:text-yellow-400'>Airbnb.com</a>
           </nav>
           <div className='flex gap-6 text-xl'>
             <a href='https://www.facebook.com/profile.php?id=61553588529798&locale=es_LA'><FaFacebookF /></a>
