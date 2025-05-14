@@ -24,7 +24,7 @@ export default function Page() {
 
   const [open, setOpen] = useState(false);
    return (
-    <main className="bg-black text-white min-h-screen font-sans">
+    <div className="bg-black text-white min-h-screen font-sans">
       <header className="w-full bg-zinc-900 px-6 py-4 flex justify-between items-center text-xl font-bold uppercase text-white">
         <button className="md:hidden text-3xl" onClick={() => setOpen(true)}>
           <HiMenu />
@@ -580,7 +580,7 @@ export default function Page() {
           </div>
         </div>
       </footer>
-    </main>
+    </div>
   );
 }
 
