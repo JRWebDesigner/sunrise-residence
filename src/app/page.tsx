@@ -407,7 +407,7 @@ Sunrise Residence è un appartamento moderno e spazioso, pensato per offrire un&
           <div className="w-full aspect-video rounded-lg overflow-hidden shadow-lg">
             <iframe
               className="w-full h-full"
-              src="https://www.youtube.com/embed/0dZ9ePGGjtc"
+              src="https://www.youtube.com/embed/n8j3mMyA5xQ"
               title="Fiera Internazionale del Tartufo Bianco d&apos;Alba"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -427,7 +427,7 @@ Sunrise Residence è un appartamento moderno e spazioso, pensato per offrire un&
               <div className="w-full aspect-video rounded-lg overflow-hidden shadow-lg">
                 <iframe
                   className="w-full h-full"
-                  src="https://www.youtube.com/embed/VmVKNWbnt6g"
+                  src="https://www.youtube.com/embed/KWmqBGPGb8A"
                   title="Video Barolo"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
