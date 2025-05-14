@@ -114,7 +114,7 @@ export default function Page() {
           >
             <h2 className="text-4xl font-bold text-yellow-400 text-center mb-10">¡Bienvenido a Sunrise Residence!</h2>
             <p className="text-lg text-gray-300 max-w-3xl mx-auto leading-8">
-              Nos complace darte la bienvenida a Sunrise Residence, el punto de partida ideal para tu estadía en Alba. Ubicado en una zona céntrica, este apartamento recientemente renovado ofrece un equilibrio perfecto entre confort, conveniencia y estilo. Ya sea que estés aquí por turismo o trabajo, en Sunrise Residence encontrarás todo lo que necesitas para sentirte como en casa.
+              Nos complace darte la bienvenida a Sunrise Residence, el punto de partida ideal para tu estadía en Alba. Ubicado en una zona céntrica,  este apartamento recientemente renovado ofrece un equilibrio perfecto entre confort, conveniencia y estilo. Ya sea que estés aquí por turismo o trabajo, en Sunrise Residence encontrarás todo lo que necesitas para sentirte como en casa.
             </p>
           </motion.div>
         </section>
