@@ -344,7 +344,7 @@ export default function HomeEn() {
         <Image src="/images/atr2.webp" width={600} height={400} objectFit="cover" alt="image" className="rounded-3xl mx-auto mb-7" />
         <h3 className="text-yellow-400 text-2xl font-semibold mb-2">The International Truffle Fair</h3>
         <p>
-          The truffle, a precious and rare fruit of the earth, is celebrated in many Italian cities at various times of the year. Both white and black truffles are often found at tasting booths in many fall festivals or events early in the year dedicated to this tuber and its related products. If you&apos;re a truffle lover and a foodie, don’t miss these events!
+          The truffle, a precious and rare fruit of the earth, is celebrated in many Italian cities at various times of the year. Both white and black truffles are often found at tasting booths in many fall festivals or events early in the year dedicated to this tuber and its related products. If you&apos;re a truffle lover and a foodie, don&apos;t miss these events!
         </p>
       </div>
       <div>
