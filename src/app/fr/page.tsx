@@ -309,7 +309,7 @@ Sunrise Residence est un appartement moderne et spacieux, conçu pour offrir une
               <h3 className="text-yellow-400 font-semibold mt-6 mb-2">Sécurité et protection</h3>
               <ul className="list-disc ml-6">
                 <li>Extincteurs</li>
-                <li>Caméras de surveillance à l'extérieur du bâtiment</li>
+                <li>Caméras de surveillance à l&lsquo;extérieur du bâtiment</li>
                 <li>Caméras de surveillance dans les parties communes</li>
                 <li>Accès par clé</li>
                 <li>Sécurité 24h/24</li>
@@ -378,7 +378,7 @@ Sunrise Residence est un appartement moderne et spacieux, conçu pour offrir une
                   />
               <h3 className="text-yellow-400 text-2xl font-semibold mb-2">La Foire Internationale de la Truffe</h3>
               <p>
-                La truffe, fruit précieux et rare de la terre, est célébrée dans de nombreuses villes italiennes à différentes périodes de l&lsquo;année. Les truffes blanches et noires sont souvent présentes sur les stands de dégustation des nombreuses manifestations automnales ou dans les premiers mois de l&lsquo;année qui leur sont consacrées ainsi qu'aux autres produits liés à ce tubercule. Si vous êtes un amateur de truffes et un bon vivant, ne manquez pas ces événements !
+                La truffe, fruit précieux et rare de la terre, est célébrée dans de nombreuses villes italiennes à différentes périodes de l&lsquo;année. Les truffes blanches et noires sont souvent présentes sur les stands de dégustation des nombreuses manifestations automnales ou dans les premiers mois de l&lsquo;année qui leur sont consacrées ainsi qu&lsquo;aux autres produits liés à ce tubercule. Si vous êtes un amateur de truffes et un bon vivant, ne manquez pas ces événements !
               </p>
             </div>
             <div>
@@ -455,7 +455,7 @@ Sunrise Residence est un appartement moderne et spacieux, conçu pour offrir une
           </div>
           <div className="text-gray-300 text-xl leading-relaxed">
             <p className="italic text-white text-2xl mb-4">
-              Accueil très chaleureux. Appartement propre et bien équipé. L'emplacement est excellent, proche du centres
+              Accueil très chaleureux. Appartement propre et bien équipé. L&lsquo;emplacement est excellent, proche du centres
             </p>
             <p className="text-yellow-400 font-semibold">Michel (Suisse)</p>
           </div>
