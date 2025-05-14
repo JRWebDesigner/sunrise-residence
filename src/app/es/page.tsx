@@ -219,8 +219,7 @@ export default function Page() {
       { icon: <FaWifi />, label: "Wi-Fi gratis" },
       { icon: <FaCouch />, label: "Terraza" },
       { icon: <FaParking />, label: "Aparcamiento gratuito" },
-      { icon: <FaDoorClosed />, label: "Balcón
-" },
+      { icon: <FaDoorClosed />, label: "Balcón"},
       { icon: <FaSnowflake />, label: "Aire acondicionado" },
       { icon: <FaBath />, label: "Baño privado" },
       { icon: <FaSmokingBan />, label: "Habitaciones para no fumadores" },
