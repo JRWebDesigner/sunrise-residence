@@ -18,14 +18,14 @@ import { HiMenu, HiX } from 'react-icons/hi';
 import { motion, AnimatePresence } from 'framer-motion';
 
 
-export default function Home() {
+export default function HomeES() {
   const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null);
   const images = Array.from({ length: 32 }, (_, i) => `/images/img-${i + 1}.webp`);
 
   const [open, setOpen] = useState(false);
    return (
     <main className="bg-black text-white min-h-screen font-sans">
-       <header className="w-full bg-zinc-900 px-6 py-4 flex justify-between items-center text-xl font-bold uppercase text-white">
+      <header className="w-full bg-zinc-900 px-6 py-4 flex justify-between items-center text-xl font-bold uppercase text-white">
         <button className="md:hidden text-3xl" onClick={() => setOpen(true)}>
           <HiMenu />
         </button>
@@ -41,7 +41,7 @@ export default function Home() {
             <div className="absolute hidden group-hover:block bg-black border border-zinc-700 mt-2 p-2 text-sm">
               <Link href="/es"><div className="hover:text-yellow-400">Español</div></Link>
               <Link href="/en"><div className="hover:text-yellow-400">English</div></Link>
-              <Link href="/it"><div className="hover:text-yellow-400">Italiano</div></Link>
+              <Link href="/"><div className="hover:text-yellow-400">Italiano</div></Link>
             </div>
           </div>
           <Link href="/host"><span className="hover:text-yellow-400">Your Host</span></Link>
@@ -70,103 +70,105 @@ export default function Home() {
               <div className="pl-4 mt-2 text-base">
                 <Link href="/es" onClick={() => setOpen(false)}>Español</Link><br />
                 <Link href="/en" onClick={() => setOpen(false)}>English</Link><br />
-                <Link href="/it" onClick={() => setOpen(false)}>Italiano</Link>
+                <Link href="/" onClick={() => setOpen(false)}>Italiano</Link>
               </div>
             </div>
             <Link href="/host" onClick={() => setOpen(false)}>Your Host</Link>
-            <Link href="https://facebook.com" onClick={() => setOpen(false)}>Facebook</Link>
-            <Link href="https://booking.com" onClick={() => setOpen(false)}>Booking.com</Link>
-            <Link href="https://airbnb.com" onClick={() => setOpen(false)}>Airbnb.com</Link>
+            <Link href="https://www.facebook.com/profile.php?id=61553588529798" onClick={() => setOpen(false)}>Facebook</Link>
+            <Link href="https://www.booking.com/hotel/it/sunrise-veronica.html?aid=964694&app_hotel_id=10680979&checkin=2023-11-15&checkout=2023-11-16&from_sn=android&group_adults=3&group_children=0&label=hotel_details-5WyBiO%401700081590&no_rooms=1&req_adults=3&req_children=0&room1=A%2CA%2CA&lang=en-us&soz=1&lang_changed=1" onClick={() => setOpen(false)}>Booking.com</Link>
+            <Link href="https://www.airbnb.it/users/show/475678499" onClick={() => setOpen(false)}>Airbnb.com</Link>
           </motion.aside>
         )}
       </AnimatePresence>
 
       {/* Hero Section */}
       <section className="relative h-[40dvh] md:h-[100dvh] flex items-center justify-center overflow-hidden">
-  <Image
-    src="/images/fachada.webp"
-    fill
-    style={{ objectPosition: 'center' }}
-    alt="Fachada Sunrise Residence"
-    className="opacity-40 md:object-cover object-contain"
-    priority
-  />
-  <motion.div
-    initial={{ opacity: 0, y: 50 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 1 }}
-    className="text-center z-10 px-4"
-  >
-    <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-yellow-400">
-      Sunrise Residence
-    </h1>
-  </motion.div>
-</section>
-
-      {/* Características */}
-      <section className="py-20 px-6 md:px-20 bg-zinc-900 flex md:flex-row flex-col justify-center items-center">
-         <img 
+          <Image
+            src="/images/fachada.webp"
+            fill
+            style={{ objectPosition: 'center' }}
+            alt="Fachada Sunrise Residence"
+            className="opacity-40 md:object-cover object-contain"
+            priority
+          />
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            className="text-center z-10 px-4"
+          >
+            <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-yellow-400">
+              Sunrise Residence
+            </h1>
+          </motion.div>
+      </section>
+        <section className="py-20 px-6 md:px-20 bg-zinc-900 flex md:flex-row flex-col justify-center items-center">
+          <img 
             src="/images/home.jpg" alt="Terraza" width={360} height={360} className="rounded-full mx-auto" 
-            />
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 1 }}
-        >
-          <h2 className="text-4xl font-bold text-yellow-400 text-center mb-10">Bienvenido</h2>
-          <p className="text-lg text-gray-300 max-w-3xl mx-auto leading-8">
-Sunrise Residence es un apartamento recientemente renovado y ofrece alojamiento en Alba. Este alojamiento ofrece vistas al patio interior y un balcón. El apartamento dispone de habitaciones con aire acondicionado, aparcamiento privado gratuito y conexión WiFi gratuita.
-          </p>
-        </motion.div>
-      </section>
-      
-      {/* Sobre el Alojamiento */}
-      <section className="py-20 px-6 md:px-20 bg-zinc-800 flex md:flex-row flex-col justify-center items-center gap-10">
-      <Image src="/images/sobre.webp" alt="Terraza" width={600} height={400} className="w-[95%] md:w-[50%]" />
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 1 }}
-        >
-          <h2 className="text-4xl font-bold text-yellow-400 text-center mb-10">Sunrise Residence</h2>
-          <p className="text-lg text-gray-300 max-w-3xl mx-auto leading-8">
-La propiedad consta de dos modernos apartamentos totalmente equipados, con capacidad para 4 personas cada uno. Esta conveniente ubicación central es perfecta para quienes deseen visitar la ciudad. Los apartamentos han sido diseñados para ofrecer el máximo confort y una estancia inolvidable.
-          </p>
-        </motion.div>
-      </section>
+          />
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+          >
+            <h2 className="text-4xl font-bold text-yellow-400 text-center mb-10">¡Bienvenido a Sunrise Residence!</h2>
+            <p className="text-lg text-gray-300 max-w-3xl mx-auto leading-8">
+              Nos complace darte la bienvenida a Sunrise Residence, el punto de partida ideal para tu estadía en Alba. Ubicado en una zona céntrica, este apartamento recientemente renovado ofrece un equilibrio perfecto entre confort, conveniencia y estilo. Ya sea que estés aquí por turismo o trabajo, en Sunrise Residence encontrarás todo lo que necesitas para sentirte como en casa.
+            </p>
+          </motion.div>
+        </section>
+
+        <section className="py-20 px-6 md:px-20 bg-zinc-800 flex md:flex-row flex-col justify-center items-center gap-10">
+          <Image src="/images/sobre.webp" alt="Terraza" width={600} height={400} className="w-[95%] md:w-[50%]" />
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+          >
+            <h2 className="text-4xl font-bold text-yellow-400 text-center mb-10">Descripción de Sunrise Residence</h2>
+            <p className="text-lg text-gray-300 max-w-3xl mx-auto leading-8">
+              Sunrise Residence es un apartamento moderno y espacioso, diseñado para ofrecer una experiencia de estancia cómoda y relajante. Con habitaciones amplias, decoradas con buen gusto.
+            </p>
+          </motion.div>
+        </section>
+        
+        
        <section className="bg-black py-20 px-6 md:px-20 grid gap-16">
         <div className="grid md:grid-cols-2 gap-8 items-center">
-          <Image src="/images/terraza.webp" alt="Terraza" width={600} height={400} className="rounded-lg" />
-          <div>
-            <h3 className="text-yellow-400 text-2xl font-bold mb-4">Ofrecemos</h3>
-            <p className="text-gray-300 leading-7">
-              El apartamento ofrece a sus huéspedes una terraza, vistas a la ciudad, zona de estar, TV de pantalla plana, zona de cocina totalmente equipada con lavavajillas, microondas, tostadora, nevera, cafetera y hervidor de agua. El baño privado incluye bidet y secador de pelo.
-            </p>
+            <Image src="/images/terraza.webp" alt="Terraza" width={600} height={400} className="rounded-lg" />
+            <div>
+              <h3 className="text-yellow-400 text-2xl font-bold mb-4">Lo que ofrecemos</h3>
+              <p className="text-gray-300 leading-7">
+                - Ubicación céntrica: A pocos pasos de las principales atracciones turísticas, restaurantes y tiendas.<br />
+                - Habitaciones confortables: Habitaciones climatizadas con Wi-Fi gratuito y cocina completamente equipada.<br />
+                - Servicios incluidos: Estacionamiento privado gratuito, lavandería, ropa de cama y toallas proporcionadas.<br />
+                - Excelente relación calidad-precio: Una estancia cómoda y asequible sin comprometer la calidad.
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div className="flex justify-around flex-col md:flex-row gap-8 items-center md:flex-row-reverse">
-          <Image src="/images/camara.webp" alt="Camera" width={600} height={400} className="rounded-lg" />
-          <div>
-            <h3 className="text-yellow-400 text-2xl font-bold mb-4">Espacios confortables</h3>
-            <p className="text-gray-300 leading-7 mb-4">
-              Habitaciones cómodas, con amplia iluminación. Las comodidades adicionales en la habitación incluyen vino o champán.
-            </p>
-            <a href="https://www.airbnb.it/users/show/475678499" className="inline-block border border-yellow-400 text-yellow-400 px-4 py-2 rounded hover:bg-yellow-400 hover:text-black transition">VEN A VISITARNOS EN AIRBNB</a>
+          <div className="flex justify-around flex-col md:flex-row gap-8 items-center md:flex-row-reverse">
+            <Image src="/images/camara.webp" alt="Habitación" width={600} height={400} className="rounded-lg" />
+            <div>
+              <h3 className="text-yellow-400 text-2xl font-bold mb-4">Una estancia confortable a precios competitivos</h3>
+              <p className="text-gray-300 leading-7 mb-4">
+                Ya sea que viajes solo, en pareja o en familia, Sunrise Residence representa una elección ideal para quienes buscan un alojamiento práctico y económico. Con limpieza impecable, espacios bien diseñados y una ubicación estratégica, te garantizamos una estadía sin estrés, descubriendo Alba.
+              </p>
+              <a href="https://www.airbnb.it/users/show/475678499" className="inline-block border border-yellow-400 text-yellow-400 px-4 py-2 rounded hover:bg-yellow-400 hover:text-black transition">VEN A VISITARNOS EN AIRBNB</a>
+            </div>
           </div>
-        </div>
 
-        <div className="grid md:grid-cols-2 gap-8 items-center">
-          <Image src="/images/cocina.webp" alt="Cocina" width={600} height={400} className="rounded-lg" />
-          <div>
-            <h3 className="text-yellow-400 text-2xl font-bold mb-4">Buena ubicación</h3>
-            <p className="text-gray-300 leading-7 mb-4">
-Vicino all'appartamento potete trovare diversi ristoranti, luoghi di intrattenimento e zone turistiche che vi consigliamo di visitare. L 'aeroporto più vicino è quello internazionale di Cuneo, a 46 km dall’appartamento.
-            </p>
-            <a href="https://facebook.com" className="inline-block border border-yellow-400 text-yellow-400 px-4 py-2 rounded hover:bg-yellow-400 hover:text-black transition">NUESTRO FACEBOOK</a>
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <Image src="/images/cocina.webp" alt="Cocina" width={600} height={400} className="rounded-lg" />
+            <div>
+              <h3 className="text-yellow-400 text-2xl font-bold mb-4">¡Reserva tu estancia ahora!</h3>
+              <p className="text-gray-300 leading-7 mb-4">
+                ¡No esperes más! Reserva tu estadía en Sunrise Residence y vive una experiencia única, marcada por la comodidad y el ahorro.
+              </p>
+              <a href="https://www.facebook.com/profile.php?id=61553588529798" className="inline-block border border-yellow-400 text-yellow-400 px-4 py-2 rounded hover:bg-yellow-400 hover:text-black transition">NUESTRA PÁGINA DE FACEBOOK</a>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
        {/* Galería */}
           <section className="py-20 px-6 md:px-20">
       <h2 className="text-3xl md:text-5xl font-semibold text-yellow-400 text-center mb-12">Galeria</h2>
@@ -209,7 +211,7 @@ Vicino all'appartamento potete trovare diversi ristoranti, luoghi di intrattenim
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1 }}
         >
-          <h2 className="text-4xl font-bold text-yellow-400 text-center mb-16">Servizi</h2>
+          <h2 className="text-4xl font-bold text-yellow-400 text-center mb-16">Sevicios</h2>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-10 max-w-6xl mx-auto">
     {[
       { icon: <FaCity />, label: "Vista de la ciudad" },
@@ -246,108 +248,108 @@ Vicino all'appartamento potete trovare diversi ristoranti, luoghi di intrattenim
           <h2 className="text-4xl font-bold text-yellow-400 text-center mb-12">Características del edificio</h2>
           <div className="grid md:grid-cols-2 gap-10 text-gray-300 text-lg leading-8">
             <div>
-  <h3 className="text-yellow-400 font-semibold mb-2">Cocina / Kitchen</h3>
+  <h3 className="text-yellow-400 font-semibold mb-2">Cocina</h3>
   <ul className="list-disc ml-6">
-    <li>Mesa de comedor / Dining table</li>
-    <li>Cafetera / Coffee machine</li>
-    <li>Productos de limpieza / Cleaning products</li>
-    <li>Tostadora / Toaster</li>
-    <li>Placa de cocina / Stovetop</li>
-    <li>Horno / Oven</li>
-    <li>Utensilios de cocina / Kitchenware</li>
-    <li>Hervidor eléctrico / Electric kettle</li>
-    <li>Lavadora / Washing machine</li>
-    <li>Lavavajillas / Dishwasher</li>
-    <li>Microondas / Microwave</li>
-    <li>Refrigerador / Refrigerator</li>
-    <li>Cocina americana / Kitchenette</li>
+    <li>Mesa de comedor</li>
+    <li>Cafetera</li>
+    <li>Productos de limpieza</li>
+    <li>Tostadora</li>
+    <li>Placa de cocina</li>
+    <li>Horno</li>
+    <li>Utensilios de cocina</li>
+    <li>Hervidor eléctrico</li>
+    <li>Lavadora</li>
+    <li>Lavavajillas</li>
+    <li>Microondas</li>
+    <li>Refrigerador</li>
+    <li>Cocina americana</li>
   </ul>
 
-  <h3 className="text-yellow-400 font-semibold mt-6 mb-2">Baño / Bathroom</h3>
+  <h3 className="text-yellow-400 font-semibold mt-6 mb-2">Baño</h3>
   <ul className="list-disc ml-6">
-    <li>Papel higiénico / Toilet paper</li>
-    <li>Bidet / Bidet</li>
-    <li>Bañera o ducha / Bathtub or shower</li>
-    <li>Baño privado / Private bathroom</li>
-    <li>WC / Toilet</li>
-    <li>Secador de pelo / Hairdryer</li>
-    <li>Ducha / Shower</li>
+    <li>Papel higiénico</li>
+    <li>Bidet</li>
+    <li>Bañera o ducha </li>
+    <li>Baño privado</li>
+    <li>WC</li>
+    <li>Secador de pelo</li>
+    <li>Ducha</li>
   </ul>
 
-  <h3 className="text-yellow-400 font-semibold mt-6 mb-2">Dormitorio / Bedroom</h3>
+  <h3 className="text-yellow-400 font-semibold mt-6 mb-2">Dormitorio</h3>
   <ul className="list-disc ml-6">
-    <li>Camas dobles e individuales / Double and single beds</li>
-    <li>Aparador / Dresser</li>
-    <li>Mesita de noche / Bedside table</li>
+    <li>Camas dobles e individuales</li>
+    <li>Aparador </li>
+    <li>Mesita de noche</li>
   </ul>
 
-  <h3 className="text-yellow-400 font-semibold mt-6 mb-2">Zona de estar / Living area</h3>
+  <h3 className="text-yellow-400 font-semibold mt-6 mb-2">Zona de estar</h3>
   <ul className="list-disc ml-6">
-    <li>Sofá / Sofa</li>
-    <li>Zona de estar / Seating area</li>
-    <li>Escritorio / Desk</li>
+    <li>Sofá</li>
+    <li>Zona de estar</li>
+    <li>Escritorio</li>
   </ul>
 </div>
 
 <div>
-  <h3 className="text-yellow-400 font-semibold mb-2">Espacios al aire libre / Outdoor spaces</h3>
+  <h3 className="text-yellow-400 font-semibold mb-2">Espacios al aire libre</h3>
   <ul className="list-disc ml-6">
-    <li>Balcón / Balcony</li>
-    <li>Terraza / Terrace</li>
-    <li>Aparcamiento gratuito / Free parking</li>
+    <li>Balcón </li>
+    <li>Terraza </li>
+    <li>Aparcamiento gratuito </li>
   </ul>
 
-  <h3 className="text-yellow-400 font-semibold mt-6 mb-2">Medios y tecnología / Media & Technology</h3>
+  <h3 className="text-yellow-400 font-semibold mt-6 mb-2">Medios y tecnología </h3>
   <ul className="list-disc ml-6">
-    <li>Servicio de streaming (ej. Netflix) / Streaming service (e.g., Netflix)</li>
-    <li>Televisor de pantalla plana / Flat-screen TV</li>
+    <li>Servicio de streaming (ej. Netflix)</li>
+    <li>Televisor de pantalla plana</li>
   </ul>
 
-  <h3 className="text-yellow-400 font-semibold mt-6 mb-2">Instalaciones / Facilities</h3>
+  <h3 className="text-yellow-400 font-semibold mt-6 mb-2">Instalaciones</h3>
   <ul className="list-disc ml-6">
-    <li>Enchufe cerca de la cama / Power outlet near bed</li>
-    <li>Tendedero / Drying rack</li>
-    <li>Perchero / Clothes rack</li>
-    <li>Suelo de parquet o madera / Parquet or wooden floor</li>
-    <li>Plancha y tabla de planchar / Iron and ironing board</li>
+    <li>Enchufe cerca de la cama </li>
+    <li>Tendedero</li>
+    <li>Perchero</li>
+    <li>Suelo de parquet o madera</li>
+    <li>Plancha y tabla de planchar</li>
   </ul>
 
-  <h3 className="text-yellow-400 font-semibold mt-6 mb-2">Seguridad / Safety</h3>
+  <h3 className="text-yellow-400 font-semibold mt-6 mb-2">Seguridad</h3>
   <ul className="list-disc ml-6">
-    <li>Extintores / Fire extinguishers</li>
-    <li>Cámaras de seguridad en el exterior / CCTV outside property</li>
-    <li>Cámaras de seguridad en zonas comunes / CCTV in common areas</li>
-    <li>Acceso con llaves / Key access</li>
-    <li>Seguridad 24 horas / 24-hour security</li>
+    <li>Extintores </li>
+    <li>Cámaras de seguridad en el exterior </li>
+    <li>Cámaras de seguridad en zonas comunes</li>
+    <li>Acceso con llaves </li>
+    <li>Seguridad 24 horas</li>
   </ul>
 
-  <h3 className="text-yellow-400 font-semibold mt-6 mb-2">Alrededores / Surroundings</h3>
+  <h3 className="text-yellow-400 font-semibold mt-6 mb-2">Alrededores</h3>
   <ul className="list-disc ml-6">
-    <li><strong>Restaurantes y cafeterías / Restaurants and cafes</strong></li>
+    <li><strong>Restaurantes y cafeterías </strong></li>
     <li>Zenzero & Café (50 m)</li>
     <li>Hope's Food (100 m)</li>
     <li>Piccolo Caffè (100 m)</li>
 
-    <li><strong>Belleza natural / Natural beauty</strong></li>
+    <li><strong>Belleza natural </strong></li>
     <li>Monte Passo della Bossola (22 km)</li>
-    <li>Mar / océano Riviera delle Palme (49 km)</li>
+    <li>Mar</li>
 
-    <li><strong>Turismo / Tourism</strong></li>
+    <li><strong>Turismo </strong></li>
     <li>Telesilla San Grato-Pian del Bal (47 km)</li>
-    <li>Pinar / Pine forest (47 km)</li>
+    <li>Pinar </li>
     <li>Sapel (47 km)</li>
 
-    <li><strong>Transporte público / Public transport</strong></li>
+    <li><strong>Transporte público </strong></li>
     <li>Tren Alba (500 m)</li>
     <li>Tren Mussotto (2,6 km)</li>
-    <li>Estación de autobuses (39 m) / Bus station (39 m)</li>
-    <li>Parada de taxis (100 m) / Taxi stand (100 m)</li>
+    <li>Estación de autobuses (39 m)</li>
+    <li>Parada de taxis (100 m) </li>
 
-    <li><strong>Aeropuertos cercanos / Nearest airports</strong></li>
+    <li><strong>Aeropuertos cercanos </strong></li>
     <li>Aeropuerto de Cuneo - Levaldigi (35 km)</li>
-    <li>Aeropuerto de Turín (62 km) / Turin Airport (62 km)</li>
+    <li>Aeropuerto de Turín (62 km) </li>
     <li>Aeropuerto de Génova-Sestri (70 km)</li>
-    <li>Aeropuerto de Milán-Malpensa / Milan Malpensa Airport</li>
+    <li>Aeropuerto de Milán-Malpensa </li>
   </ul>
 </div>
 

@@ -18,14 +18,14 @@ import { HiMenu, HiX } from 'react-icons/hi';
 import { motion, AnimatePresence } from 'framer-motion';
 
 
-export default function Home() {
+export default function HomeEN() {
   const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null);
   const images = Array.from({ length: 32 }, (_, i) => `/images/img-${i + 1}.webp`);
 
   const [open, setOpen] = useState(false);
    return (
     <main className="bg-black text-white min-h-screen font-sans">
-       <header className="w-full bg-zinc-900 px-6 py-4 flex justify-between items-center text-xl font-bold uppercase text-white">
+<header className="w-full bg-zinc-900 px-6 py-4 flex justify-between items-center text-xl font-bold uppercase text-white">
         <button className="md:hidden text-3xl" onClick={() => setOpen(true)}>
           <HiMenu />
         </button>
@@ -41,7 +41,7 @@ export default function Home() {
             <div className="absolute hidden group-hover:block bg-black border border-zinc-700 mt-2 p-2 text-sm">
               <Link href="/es"><div className="hover:text-yellow-400">Español</div></Link>
               <Link href="/en"><div className="hover:text-yellow-400">English</div></Link>
-              <Link href="/it"><div className="hover:text-yellow-400">Italiano</div></Link>
+              <Link href="/"><div className="hover:text-yellow-400">Italiano</div></Link>
             </div>
           </div>
           <Link href="/host"><span className="hover:text-yellow-400">Your Host</span></Link>
@@ -70,103 +70,104 @@ export default function Home() {
               <div className="pl-4 mt-2 text-base">
                 <Link href="/es" onClick={() => setOpen(false)}>Español</Link><br />
                 <Link href="/en" onClick={() => setOpen(false)}>English</Link><br />
-                <Link href="/it" onClick={() => setOpen(false)}>Italiano</Link>
+                <Link href="/" onClick={() => setOpen(false)}>Italiano</Link>
               </div>
             </div>
             <Link href="/host" onClick={() => setOpen(false)}>Your Host</Link>
-            <Link href="https://facebook.com" onClick={() => setOpen(false)}>Facebook</Link>
-            <Link href="https://booking.com" onClick={() => setOpen(false)}>Booking.com</Link>
-            <Link href="https://airbnb.com" onClick={() => setOpen(false)}>Airbnb.com</Link>
+            <Link href="https://www.facebook.com/profile.php?id=61553588529798" onClick={() => setOpen(false)}>Facebook</Link>
+            <Link href="https://www.booking.com/hotel/it/sunrise-veronica.html?aid=964694&app_hotel_id=10680979&checkin=2023-11-15&checkout=2023-11-16&from_sn=android&group_adults=3&group_children=0&label=hotel_details-5WyBiO%401700081590&no_rooms=1&req_adults=3&req_children=0&room1=A%2CA%2CA&lang=en-us&soz=1&lang_changed=1" onClick={() => setOpen(false)}>Booking.com</Link>
+            <Link href="https://www.airbnb.it/users/show/475678499" onClick={() => setOpen(false)}>Airbnb.com</Link>
           </motion.aside>
         )}
       </AnimatePresence>
 
       {/* Hero Section */}
       <section className="relative h-[40dvh] md:h-[100dvh] flex items-center justify-center overflow-hidden">
-  <Image
-    src="/images/fachada.webp"
-    fill
-    style={{ objectPosition: 'center' }}
-    alt="Fachada Sunrise Residence"
-    className="opacity-40 md:object-cover object-contain"
-    priority
-  />
-  <motion.div
-    initial={{ opacity: 0, y: 50 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 1 }}
-    className="text-center z-10 px-4"
-  >
-    <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-yellow-400">
-      Sunrise Residence
-    </h1>
-  </motion.div>
-</section>
+          <Image
+            src="/images/fachada.webp"
+            fill
+            style={{ objectPosition: 'center' }}
+            alt="Fachada Sunrise Residence"
+            className="opacity-40 md:object-cover object-contain"
+            priority
+          />
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            className="text-center z-10 px-4"
+          >
+            <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-yellow-400">
+              Sunrise Residence
+            </h1>
+          </motion.div>
+        </section>
 
-      {/* Características */}
-      <section className="py-20 px-6 md:px-20 bg-zinc-900 flex md:flex-row flex-col justify-center items-center">
-         <img 
-            src="/images/home.jpg" alt="Terraza" width={360} height={360} className="rounded-full mx-auto" 
-            />
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 1 }}
-        >
-          <h2 className="text-4xl font-bold text-yellow-400 text-center mb-10">Benvenuto</h2>
-          <p className="text-lg text-gray-300 max-w-3xl mx-auto leading-8">
-Sunrise Residence si tratta di un appartamento recentemente ristrutturato e offre alloggio ad Alba. Questa sistemazione offre una vista sul cortile interno e un balcone. L&apos;appartamento dispone di camere climatizzate, parcheggio privato gratuito e connessione Wi-Fi gratuita.
-          </p>
-        </motion.div>
-      </section>
-      
-      {/* Sobre el Alojamiento */}
-      <section className="py-20 px-6 md:px-20 bg-zinc-800 flex md:flex-row flex-col justify-center items-center gap-10">
-      <Image src="/images/sobre.webp" alt="Terraza" width={600} height={400} className="w-[95%] md:w-[50%]" />
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 1 }}
-        >
-          <h2 className="text-4xl font-bold text-yellow-400 text-center mb-10">Sunrise Residence</h2>
-          <p className="text-lg text-gray-300 max-w-3xl mx-auto leading-8">
-La struttura è composta da due moderni appartamenti completamente attrezzati, con capacità per 4 persone ciascuno. Questa comoda posizione centrale è perfetta per coloro che desiderano visitare la città. Gli appartamenti sono stati progettati per offrire il massimo comfort e un soggiorno indimenticabile.
-          </p>
-        </motion.div>
-      </section>
-       <section className="bg-black py-20 px-6 md:px-20 grid gap-16">
-        <div className="grid md:grid-cols-2 gap-8 items-center">
-          <Image src="/images/terraza.webp" alt="Terraza" width={600} height={400} className="rounded-lg" />
-          <div>
-            <h3 className="text-yellow-400 text-2xl font-bold mb-4">Noi Offriamo</h3>
-            <p className="text-gray-300 leading-7">
-              L&apos;appartamento dispone di terrazza, vista sulla città, area salotto, TV a schermo piatto, angolo cottura completamente attrezzato con lavastoviglie, forno a microonde, tostapane, frigorifero, macchinetta del caffè e bollitore. Il bagno privato è completo di bidet e asciugacapelli.
+            <section className="py-20 px-6 md:px-20 bg-zinc-900 flex md:flex-row flex-col justify-center items-center">
+          <img 
+            src="/images/home.jpg" alt="Terrace" width={360} height={360} className="rounded-full mx-auto" 
+          />
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+          >
+            <h2 className="text-4xl font-bold text-yellow-400 text-center mb-10">Welcome to Sunrise Residence!</h2>
+            <p className="text-lg text-gray-300 max-w-3xl mx-auto leading-8">
+              We are pleased to welcome you to Sunrise Residence, the ideal starting point for your stay in Alba. Located in a central area, this recently renovated apartment offers a perfect balance of comfort, convenience, and style. Whether you're here for tourism or work, you'll find everything you need to feel at home at Sunrise Residence.
             </p>
-          </div>
-        </div>
+          </motion.div>
+        </section>
 
-        <div className="flex justify-around flex-col md:flex-row gap-8 items-center md:flex-row-reverse">
-          <Image src="/images/camara.webp" alt="Camera" width={600} height={400} className="rounded-lg" />
-          <div>
-            <h3 className="text-yellow-400 text-2xl font-bold mb-4">Spazi confortevoli</h3>
-            <p className="text-gray-300 leading-7 mb-4">
-              Camere confortevoli, con ampia illuminazione. Ulteriori servizi in camera includono vino o champagne.
+        <section className="py-20 px-6 md:px-20 bg-zinc-800 flex md:flex-row flex-col justify-center items-center gap-10">
+          <Image src="/images/sobre.webp" alt="Terrace" width={600} height={400} className="w-[95%] md:w-[50%]" />
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+          >
+            <h2 className="text-4xl font-bold text-yellow-400 text-center mb-10">Description of Sunrise Residence</h2>
+            <p className="text-lg text-gray-300 max-w-3xl mx-auto leading-8">
+              Sunrise Residence is a modern and spacious apartment, designed to offer a comfortable and relaxing stay. With large, tastefully furnished rooms.
             </p>
-            <a href="https://www.airbnb.it/users/show/475678499" className="inline-block border border-yellow-400 text-yellow-400 px-4 py-2 rounded hover:bg-yellow-400 hover:text-black transition">VIENI A TROVARCI SU AIRBNB</a>
+          </motion.div>
+        </section>
+        <section className="py-20 px-6 md:px-20 bg-black grid gap-16">
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <Image src="/images/terraza.webp" alt="Terrace" width={600} height={400} className="rounded-lg" />
+            <div>
+              <h3 className="text-yellow-400 text-2xl font-bold mb-4">What We Offer</h3>
+              <p className="text-gray-300 leading-7">
+                - Central location: Just a few steps from main tourist attractions, restaurants, and shops.<br />
+                - Comfortable rooms: Air-conditioned rooms with free Wi-Fi and a fully equipped kitchen.<br />
+                - Included services: Free private parking, laundry, and provided bed and bath linens.<br />
+                - Excellent value: Comfortable and convenient stay without compromising quality.
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div className="grid md:grid-cols-2 gap-8 items-center">
-          <Image src="/images/cocina.webp" alt="Cocina" width={600} height={400} className="rounded-lg" />
-          <div>
-            <h3 className="text-yellow-400 text-2xl font-bold mb-4">Buona Posizione</h3>
-            <p className="text-gray-300 leading-7 mb-4">
-              Vicino all&apos;appartamento potete trovare diversi ristoranti, luoghi di intrattenimento e zone turistiche che vi consigliamo di visitare. L &apos;aeroporto più vicino è quello internazionale di Cuneo, a 46 km dall’appartamento.
-            </p>
-            <a href="https://facebook.com" className="inline-block border border-yellow-400 text-yellow-400 px-4 py-2 rounded hover:bg-yellow-400 hover:text-black transition">IL NOSTRO FACEBOOK</a>
+          <div className="flex justify-around flex-col md:flex-row gap-8 items-center md:flex-row-reverse">
+            <Image src="/images/camara.webp" alt="Room" width={600} height={400} className="rounded-lg" />
+            <div>
+              <h3 className="text-yellow-400 text-2xl font-bold mb-4">A Comfortable Stay at Competitive Prices</h3>
+              <p className="text-gray-300 leading-7 mb-4">
+                Whether you're traveling solo, as a couple, or with family, Sunrise Residence is an ideal choice for those looking for practical and affordable accommodation. With spotless cleanliness, well-designed spaces, and a strategic location, we guarantee a stress-free stay while exploring Alba.
+              </p>
+              <a href="https://www.airbnb.it/users/show/475678499" className="inline-block border border-yellow-400 text-yellow-400 px-4 py-2 rounded hover:bg-yellow-400 hover:text-black transition">VISIT US ON AIRBNB</a>
+            </div>
           </div>
-        </div>
-      </section>
+
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <Image src="/images/cocina.webp" alt="Kitchen" width={600} height={400} className="rounded-lg" />
+            <div>
+              <h3 className="text-yellow-400 text-2xl font-bold mb-4">Book Your Stay Now!</h3>
+              <p className="text-gray-300 leading-7 mb-4">
+                Don't wait! Book your stay at Sunrise Residence and enjoy a unique experience, full of comfort and savings.
+              </p>
+              <a href="https://facebook.com" className="inline-block border border-yellow-400 text-yellow-400 px-4 py-2 rounded hover:bg-yellow-400 hover:text-black transition">OUR FACEBOOK</a>
+            </div>
+          </div>
+        </section>
        {/* Galería */}
           <section className="py-20 px-6 md:px-20">
       <h2 className="text-3xl md:text-5xl font-semibold text-yellow-400 text-center mb-12">Gallería</h2>
@@ -203,244 +204,200 @@ La struttura è composta da due moderni appartamenti completamente attrezzati, c
       </div>
     </section>
       {/* Instalaciones estilizadas */}
-      <section className="py-20 px-6 md:px-20 bg-zinc-800">
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 1 }}
-        >
-          <h2 className="text-4xl font-bold text-yellow-400 text-center mb-16">Servizi</h2>
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-10 max-w-6xl mx-auto">
-    {[
-      { icon: <FaCity />, label: "Vista sulla città" },
-      { icon: <FaWifi />, label: "WiFi Gratuito" },
-      { icon: <FaCouch />, label: "Terrazza" },
-      { icon: <FaParking />, label: "Parcheggio Gratuito" },
-      { icon: <FaDoorClosed />, label: "Balcone" },
-      { icon: <FaSnowflake />, label: "Aria condizionata" },
-      { icon: <FaBath />, label: "Bagno Privato" },
-      { icon: <FaSmokingBan />, label: "Camere non fumatori" },
-    ].map((item, index) => (
-      <motion.div
-        key={index}
-        whileHover={{ scale: 1.05 }}
-        transition={{ duration: 0.3 }}
-        className="flex items-center gap-4 bg-zinc-800 rounded-xl p-6 shadow-md"
-      >
-        <div className="text-yellow-400 text-3xl">{item.icon}</div>
-        <p className="text-lg text-gray-200">{item.label}</p>
+    <section className="py-20 px-6 md:px-20 bg-zinc-800">
+      <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }}>
+        <h2 className="text-4xl font-bold text-yellow-400 text-center mb-16">Amenities</h2>
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+          {[
+            { icon: <FaCity />, label: "City View" },
+            { icon: <FaWifi />, label: "Free WiFi" },
+            { icon: <FaCouch />, label: "Terrace" },
+            { icon: <FaParking />, label: "Free Parking" },
+            { icon: <FaDoorClosed />, label: "Balcony" },
+            { icon: <FaSnowflake />, label: "Air Conditioning" },
+            { icon: <FaBath />, label: "Private Bathroom" },
+            { icon: <FaSmokingBan />, label: "Non-Smoking Rooms" },
+          ].map((item, index) => (
+            <motion.div key={index} whileHover={{ scale: 1.05 }} transition={{ duration: 0.3 }} className="flex items-center gap-4 bg-zinc-800 rounded-xl p-6 shadow-md">
+              <div className="text-yellow-400 text-3xl">{item.icon}</div>
+              <p className="text-lg text-gray-200">{item.label}</p>
+            </motion.div>
+          ))}
+        </div>
       </motion.div>
-    ))}
-  </div>
-        </motion.div>
-      </section>
+    </section>
 
      <section className="py-20 px-6 md:px-20 bg-zinc-900">
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 1 }}
-          className="max-w-5xl mx-auto"
-        >
-          <h2 className="text-4xl font-bold text-yellow-400 text-center mb-12">Caratteristiche dell&apos;edificio</h2>
-          <div className="grid md:grid-cols-2 gap-10 text-gray-300 text-lg leading-8">
-            <div>
-              <h3 className="text-yellow-400 font-semibold mb-2">Cucina</h3>
-              <ul className="list-disc ml-6">
-                <li>Tavolo da pranzo</li>
-                <li>Macchina da caffè</li>
-                <li>Prodotti per le pulizie</li>
-                <li>Tostapane</li>
-                <li>Piano cottura</li>
-                <li>Forno</li>
-                <li>Utensili da cucina</li>
-                <li>Bollitore elettrico</li>
-                <li>Lavatrice</li>
-                <li>Lavastoviglie</li>
-                <li>Forno a microonde</li>
-                <li>Frigorifero</li>
-                <li>Angolo cottura</li>
-              </ul>
-              <h3 className="text-yellow-400 font-semibold mt-6 mb-2">Bagno</h3>
-              <ul className="list-disc ml-6">
-                <li>Carta igienica</li>
-                <li>Bidet</li>
-                <li>Vasca o doccia</li>
-                <li>Bagno privato</li>
-                <li>WC</li>
-                <li>Asciugacapelli</li>
-                <li>Doccia</li>
-              </ul>
-              <h3 className="text-yellow-400 font-semibold mt-6 mb-2">Camera da letto</h3>
-              <ul className="list-disc ml-6">
-                <li>Matrimoniale e singole</li>
-                <li>Credenza</li>
-                <li>Comodino</li>
-              </ul>
-              <h3 className="text-yellow-400 font-semibold mt-6 mb-2">Area soggiorno</h3>
-              <ul className="list-disc ml-6">
-                <li>Divano</li>
-                <li>Zona soggiorno</li>
-                <li>Scrivania</li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="text-yellow-400 font-semibold mb-2">Spazi all&apos;aperto</h3>
-              <ul className="list-disc ml-6">
-                <li>Balcone</li>
-                <li>Terrazza</li>
-                <li>Parcheggio gratuito</li>
-              </ul>
-              <h3 className="text-yellow-400 font-semibold mt-6 mb-2">Media e tecnologia</h3>
-              <ul className="list-disc ml-6">
-                <li>Servizio streaming (per es. Netflix)</li>
-                <li>TV a schermo piatto</li>
-              </ul>
-              <h3 className="text-yellow-400 font-semibold mt-6 mb-2">Strutture</h3>
-              <ul className="list-disc ml-6">
-                <li>Presa elettrica vicino al letto</li>
-                <li>Stendibiancheria</li>
-                <li>Stand appendiabiti</li>
-                <li>Parquet o pavimento in legno</li>
-                <li>Ferro e asse da stiro</li>
-              </ul>
-              <h3 className="text-yellow-400 font-semibold mt-6 mb-2">Protezione e sicurezza</h3>
-              <ul className="list-disc ml-6">
-                <li>Estintori</li>
-                <li>Telecamere a circuito chiuso all&apos;esterno della struttura</li>
-                <li>Telecamere a circuito chiuso nelle zone in comune</li>
-                <li>Accesso con chiavi</li>
-                <li>Sicurezza 24 ore su 24</li>
-              </ul>Michel
-              <h3 className="text-yellow-400 font-semibold mt-6 mb-2">Dintorni della struttura</h3>
-              <ul className="list-disc ml-6">
-                <li><strong>Ristoranti e caffetterie</strong></li>
-                <li>Zenzero & Caffè (50m)</li>
-                <li>Hope&apos;s Food (100m)</li>
-                <li>Piccolo Caffè (100m)</li>
-                <li><strong>Bellezze della natura</strong></li>
-                <li>Monte Passo della Bossola (22 km)</li>
-                <li>Mare/oceano Riviera delle Palme (49 km)</li>
-                <li><strong>Turismo</strong></li>
-                <li>San Grato-Pian del Bal Chair Lift (47 km)</li>
-                <li>Pineta (47km)</li>
-                <li>Sapel (47 km)</li>
-                <li><strong>Mezzi pubblici</strong></li>
-                <li>Treno Alba (500 m)</li>
-                <li>Treno Mussotto (2,6 km)</li>
-                <li>Stazione degli autobus (39m)</li>
-                <li>Posteggio dei taxi (100m)</li>
-                <li><strong>Aeroporti più vicini</strong></li>
-                <li>Aeroporto di Cuneo - Levaldigi (35 km)</li>
-                <li>Aeroporto di Turín (62 km)</li>
-                <li>Aeroporto di Genova-Sestri (70 km)</li>
-                <li>Aeroporto di Malpensa-Milano</li>
-              </ul>
-            </div>
-          </div>
-        </motion.div>
-      </section>
+  <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} className="max-w-5xl mx-auto">
+    <h2 className="text-4xl font-bold text-yellow-400 text-center mb-12">Building Features</h2>
+    <div className="grid md:grid-cols-2 gap-10 text-gray-300 text-lg leading-8">
+      <div>
+        <h3 className="text-yellow-400 font-semibold mb-2">Kitchen</h3>
+        <ul className="list-disc ml-6">
+          <li>Dining table</li>
+          <li>Coffee machine</li>
+          <li>Cleaning products</li>
+          <li>Toaster</li>
+          <li>Stovetop</li>
+          <li>Oven</li>
+          <li>Kitchenware</li>
+          <li>Electric kettle</li>
+          <li>Washing machine</li>
+          <li>Dishwasher</li>
+          <li>Microwave</li>
+          <li>Refrigerator</li>
+          <li>Kitchenette</li>
+        </ul>
+        <h3 className="text-yellow-400 font-semibold mt-6 mb-2">Bathroom</h3>
+        <ul className="list-disc ml-6">
+          <li>Toilet paper</li>
+          <li>Bidet</li>
+          <li>Bathtub or shower</li>
+          <li>Private bathroom</li>
+          <li>Toilet</li>
+          <li>Hairdryer</li>
+          <li>Shower</li>
+        </ul>
+        <h3 className="text-yellow-400 font-semibold mt-6 mb-2">Bedroom</h3>
+        <ul className="list-disc ml-6">
+          <li>Double and single beds</li>
+          <li>Wardrobe</li>
+          <li>Nightstand</li>
+        </ul>
+        <h3 className="text-yellow-400 font-semibold mt-6 mb-2">Living Area</h3>
+        <ul className="list-disc ml-6">
+          <li>Sofa</li>
+          <li>Seating area</li>
+          <li>Desk</li>
+        </ul>
+      </div>
+      <div>
+        <h3 className="text-yellow-400 font-semibold mb-2">Outdoor Areas</h3>
+        <ul className="list-disc ml-6">
+          <li>Balcony</li>
+          <li>Terrace</li>
+          <li>Free parking</li>
+        </ul>
+        <h3 className="text-yellow-400 font-semibold mt-6 mb-2">Media & Technology</h3>
+        <ul className="list-disc ml-6">
+          <li>Streaming service (e.g. Netflix)</li>
+          <li>Flat-screen TV</li>
+        </ul>
+        <h3 className="text-yellow-400 font-semibold mt-6 mb-2">Facilities</h3>
+        <ul className="list-disc ml-6">
+          <li>Power socket near the bed</li>
+          <li>Drying rack</li>
+          <li>Clothes rack</li>
+          <li>Wood or parquet floor</li>
+          <li>Iron and ironing board</li>
+        </ul>
+        <h3 className="text-yellow-400 font-semibold mt-6 mb-2">Security</h3>
+        <ul className="list-disc ml-6">
+          <li>Fire extinguishers</li>
+          <li>CCTV outside property</li>
+          <li>CCTV in common areas</li>
+          <li>Key access</li>
+          <li>24-hour security</li>
+        </ul>
+        <h3 className="text-yellow-400 font-semibold mt-6 mb-2">Nearby</h3>
+        <ul className="list-disc ml-6">
+          <li><strong>Restaurants and Cafes</strong></li>
+          <li>Zenzero & Caffè (50m)</li>
+          <li>Hope's Food (100m)</li>
+          <li>Piccolo Caffè (100m)</li>
+          <li><strong>Natural Attractions</strong></li>
+          <li>Monte Passo della Bossola (22 km)</li>
+          <li>Sea/Ocean Riviera delle Palme (49 km)</li>
+          <li><strong>Tourist Attractions</strong></li>
+          <li>San Grato-Pian del Bal Chair Lift (47 km)</li>
+          <li>Pineta (47 km)</li>
+          <li>Sapel (47 km)</li>
+          <li><strong>Public Transport</strong></li>
+          <li>Alba Train (500 m)</li>
+          <li>Mussotto Train (2.6 km)</li>
+          <li>Bus Station (39 m)</li>
+          <li>Taxi Stand (100 m)</li>
+          <li><strong>Nearest Airports</strong></li>
+          <li>Cuneo - Levaldigi Airport (35 km)</li>
+          <li>Turin Airport (62 km)</li>
+          <li>Genoa-Sestri Airport (70 km)</li>
+          <li>Milan-Malpensa Airport</li>
+        </ul>
+      </div>
+    </div>
+  </motion.div>
+</section>
       <section className="py-20 px-6 md:px-20 bg-zinc-800">
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 1 }}
-          className="max-w-4xl mx-auto"
-        >
-          <h2 className="text-4xl font-bold text-yellow-400 text-center mb-12 uppercase tracking-wide">
-            Places to Visit in Alba
-          </h2>
-          <div className="space-y-10 text-gray-300 text-lg leading-8">
-            <div>
-              <Image
-                src={`/images/atr1.webp`}
-                width={600}
-                height={400}
-                objectFit="cover"
-                alt='imagen'
-                className="rounded-3xl mx-auto mb-7"
-              />
-              <h3 className="text-yellow-400 text-2xl font-semibold mb-2">The International Truffle Fair</h3>
-              <p>
-                È la manifestazione enogastronomica più importante del Piemonte. Ogni anno nel mese di ottobre, per quasi due mesi, Alba e i suoi dintorni celebrano il pregiato Tarturo d&apos;alba con un ricchissimo programma di eventi tra mostre, esposizioni, cooking show, incontri e degustazioni.
-              </p>
-            </div>
-            <div>
-                <Image
-                    src={`/images/atr2.webp`}
-                    width={600}
-                    height={400}
-                    objectFit="cover"
-                    alt='imagen'
-                    className="rounded-3xl mx-auto  mb-7"
-                  />
-              <h3 className="text-yellow-400 text-2xl font-semibold mb-2">The International Truffle Fair</h3>
-              <p>
-                Il tartufo, frutto prezioso e raro della terra, viene celebrato in molte città italiane in diversi periodi dell&apos;anno. Il tartufo bianco e nero sono spesso presenti sui banchi di degustazione delle tante manifestazioni autunnali o nei primi mesi dell&apos;anno dedicate a loro e agli altri prodotti legati a questo tubero. Se sei un amante del tartufo e una buona forchetta, non perderti questi eventi!
-              </p>
-            </div>
-            <div>
-                <Image
-                    src={`/images/atr3.webp`}
-                    width={600}
-                    height={400}
-                    objectFit="cover"
-                    alt='imagen'
-                    className="rounded-3xl mx-auto mb-7"
-                  />
-              <h3 className="text-yellow-400 text-2xl font-semibold mb-2">The International Truffle Fair</h3>
-              <p>
-                Il cuore della Fiera del Tartufo d&apos;Alba è, come ogni anno, il Mercato Mondiale del Tartufo Bianco d&apos;Alba, il luogo dove acquistare i tartufi del territorio del Monferrato, del Roreo e delle Langhe. All&apos;interno di quest&apos;area, inoltre, è presente anche lo spazio dedicato alla cucina e denominato Alba Truffle Show. Si tratta di un grande contenitore di eventi gastronomici e culturali che celebrano l&apos;eccellenza del sapore prodotto. Nei weekend della fiera saranno presenti chef nazionali e internazionali, scrittori, artisti, chef locali e designer.
-              </p>
-            </div>
-          </div>
-        </motion.div>
-      </section>
+  <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} className="max-w-4xl mx-auto">
+    <h2 className="text-4xl font-bold text-yellow-400 text-center mb-12 uppercase tracking-wide">
+      Places to Visit in Alba
+    </h2>
+    <div className="space-y-10 text-gray-300 text-lg leading-8">
+      <div>
+        <Image src="/images/atr1.webp" width={600} height={400} objectFit="cover" alt="image" className="rounded-3xl mx-auto mb-7" />
+        <h3 className="text-yellow-400 text-2xl font-semibold mb-2">The International Truffle Fair</h3>
+        <p>
+          This is the most important food and wine event in Piedmont. Every year in October, for almost two months, Alba and its surroundings celebrate the prized Alba White Truffle with a rich program of events including exhibitions, shows, cooking demos, meetings, and tastings.
+        </p>
+      </div>
+      <div>
+        <Image src="/images/atr2.webp" width={600} height={400} objectFit="cover" alt="image" className="rounded-3xl mx-auto mb-7" />
+        <h3 className="text-yellow-400 text-2xl font-semibold mb-2">The International Truffle Fair</h3>
+        <p>
+          The truffle, a precious and rare fruit of the earth, is celebrated in many Italian cities at various times of the year. Both white and black truffles are often found at tasting booths in many fall festivals or events early in the year dedicated to this tuber and its related products. If you're a truffle lover and a foodie, don’t miss these events!
+        </p>
+      </div>
+      <div>
+        <Image src="/images/atr3.webp" width={600} height={400} objectFit="cover" alt="image" className="rounded-3xl mx-auto mb-7" />
+        <h3 className="text-yellow-400 text-2xl font-semibold mb-2">The International Truffle Fair</h3>
+        <p>
+          The heart of the Alba Truffle Fair is, as every year, the World Market of the Alba White Truffle—the place to buy truffles from the Monferrato, Roero, and Langhe areas. Inside this space, there's also the Alba Truffle Show, a large venue for food and cultural events celebrating the excellence of local flavor. On fair weekends, national and international chefs, writers, artists, local chefs, and designers are featured.
+        </p>
+      </div>
+    </div>
+  </motion.div>
+</section>
       <section className="bg-black py-20 px-6 md:px-20">
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 1 }}
-          className="max-w-6xl mx-auto space-y-16"
-        >
-          <div className="w-full aspect-video rounded-lg overflow-hidden shadow-lg">
-            <iframe
-              className="w-full h-full"
-              src="https://www.youtube.com/embed/0dZ9ePGGjtc"
-              title="Fiera Internazionale del Tartufo Bianco d&apos;Alba"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
-          </div>
+  <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} className="max-w-6xl mx-auto space-y-16">
+    <div className="w-full aspect-video rounded-lg overflow-hidden shadow-lg">
+      <iframe
+        className="w-full h-full"
+        src="https://www.youtube.com/embed/0dZ9ePGGjtc"
+        title="Alba White Truffle International Fair"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
+    </div>
 
-          <div className="grid md:grid-cols-2 gap-12">
-            <div className="text-center space-y-4">
-              <Image src="/images/barolo1.webp" alt="Barolo" width={600} height={400} className="mx-auto rounded-lg" />
-              <h3 className="text-yellow-400 text-xl font-bold">Barolo</h3>
-              <p className="text-gray-300">
-                Barolo è uno degli antichi comuni nel cui territorio si può coltivare l’uva Nebbiolo, utilizzata per produrre il famoso vino da cui il vino prende il nome. Oggi questa cittadina è conosciuta in tutto il mondo per la sua offerta enogastronomica e culturale.
-              </p>
-            </div>
-            <div className="text-center space-y-4">
-              <div className="w-full aspect-video rounded-lg overflow-hidden shadow-lg">
-                <iframe
-                  className="w-full h-full"
-                  src="https://www.youtube.com/embed/VmVKNWbnt6g"
-                  title="Video Barolo"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
-              </div>
-              <h3 className="text-yellow-400 text-xl font-bold">Barolo</h3>
-              <p className="text-gray-300">
-                Uno di questi è il “Barolo Wine Festival”, che si celebra la seconda domenica di settembre e attira l’attenzione dei turisti, anche internazionali.
-              </p>
-            </div>
-          </div>
-        </motion.div>
-      </section>
+    <div className="grid md:grid-cols-2 gap-12">
+      <div className="text-center space-y-4">
+        <Image src="/images/barolo1.webp" alt="Barolo" width={600} height={400} className="mx-auto rounded-lg" />
+        <h3 className="text-yellow-400 text-xl font-bold">Barolo</h3>
+        <p className="text-gray-300">
+          Barolo is one of the ancient towns where Nebbiolo grapes can be cultivated, used to produce the famous wine that bears its name. Today, this town is known worldwide for its food, wine, and cultural offerings.
+        </p>
+      </div>
+      <div className="text-center space-y-4">
+        <div className="w-full aspect-video rounded-lg overflow-hidden shadow-lg">
+          <iframe
+            className="w-full h-full"
+            src="https://www.youtube.com/embed/VmVKNWbnt6g"
+            title="Barolo Video"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </div>
+        <h3 className="text-yellow-400 text-xl font-bold">Barolo</h3>
+        <p className="text-gray-300">
+          One of the highlights is the Barolo Wine Festival, held on the second Sunday of September, attracting attention from tourists, including many international visitors.
+        </p>
+      </div>
+    </div>
+  </motion.div>
+</section>
+
       <section className="py-20 px-6 md:px-20 bg-zinc-900">
         <motion.div
           initial={{ opacity: 0 }}
@@ -453,16 +410,16 @@ La struttura è composta da due moderni appartamenti completamente attrezzati, c
           </div>
           <div className="text-gray-300 text-xl leading-relaxed">
             <p className="italic text-white text-2xl mb-4">
-              &ldquo;Accoglienza super cordiale. Appartamento pulito e ben attrezzato. La posizione è ottima vicino al centro.&rdquo;
+              &ldquo;Super friendly welcome. Clean and well equipped apartment. The location is great near the center.&rdquo;
             </p>
-            <p className="text-yellow-400 font-semibold">Michel (Svizzera)</p>
+            <p className="text-yellow-400 font-semibold">Michel</p>
           </div>
         </motion.div>
       </section>
 
       {/* Redes Sociales */}
       <section className="bg-yellow-400 text-black py-10 text-center">
-        <h3 className="text-2xl font-bold mb-6">Síguenos</h3>
+        <h3 className="text-2xl font-bold mb-6">Follow</h3>
         <div className="flex justify-center gap-10 text-3xl">
           <a href="https://instagram.com/sunrise_residence_?igshid=YzAwZjE1ZTI0Zg%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" className="hover:text-black text-zinc-800">
             <FaInstagram />
@@ -488,7 +445,7 @@ La struttura è composta da due moderni appartamenti completamente attrezzati, c
           transition={{ duration: 1 }}
           className="max-w-2xl mx-auto"
         >
-          <h2 className="text-4xl font-bold text-yellow-400 text-center mb-10">Contáctanos</h2>
+          <h2 className="text-4xl font-bold text-yellow-400 text-center mb-10">Contacts</h2>
           <form className="space-y-6">
             <input
               type="text"

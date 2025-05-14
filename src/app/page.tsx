@@ -41,7 +41,7 @@ export default function Home() {
             <div className="absolute hidden group-hover:block bg-black border border-zinc-700 mt-2 p-2 text-sm">
               <Link href="/es"><div className="hover:text-yellow-400">Español</div></Link>
               <Link href="/en"><div className="hover:text-yellow-400">English</div></Link>
-              <Link href="/it"><div className="hover:text-yellow-400">Italiano</div></Link>
+              <Link href="/"><div className="hover:text-yellow-400">Italiano</div></Link>
             </div>
           </div>
           <Link href="/host"><span className="hover:text-yellow-400">Your Host</span></Link>
@@ -70,13 +70,13 @@ export default function Home() {
               <div className="pl-4 mt-2 text-base">
                 <Link href="/es" onClick={() => setOpen(false)}>Español</Link><br />
                 <Link href="/en" onClick={() => setOpen(false)}>English</Link><br />
-                <Link href="/it" onClick={() => setOpen(false)}>Italiano</Link>
+                <Link href="/" onClick={() => setOpen(false)}>Italiano</Link>
               </div>
             </div>
             <Link href="/host" onClick={() => setOpen(false)}>Your Host</Link>
-            <Link href="https://facebook.com" onClick={() => setOpen(false)}>Facebook</Link>
-            <Link href="https://booking.com" onClick={() => setOpen(false)}>Booking.com</Link>
-            <Link href="https://airbnb.com" onClick={() => setOpen(false)}>Airbnb.com</Link>
+            <Link href="https://www.facebook.com/profile.php?id=61553588529798" onClick={() => setOpen(false)}>Facebook</Link>
+            <Link href="https://www.booking.com/hotel/it/sunrise-veronica.html?aid=964694&app_hotel_id=10680979&checkin=2023-11-15&checkout=2023-11-16&from_sn=android&group_adults=3&group_children=0&label=hotel_details-5WyBiO%401700081590&no_rooms=1&req_adults=3&req_children=0&room1=A%2CA%2CA&lang=en-us&soz=1&lang_changed=1" onClick={() => setOpen(false)}>Booking.com</Link>
+            <Link href="https://www.airbnb.it/users/show/475678499" onClick={() => setOpen(false)}>Airbnb.com</Link>
           </motion.aside>
         )}
       </AnimatePresence>
@@ -113,9 +113,9 @@ export default function Home() {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1 }}
         >
-          <h2 className="text-4xl font-bold text-yellow-400 text-center mb-10">Benvenuto</h2>
+          <h2 className="text-4xl font-bold text-yellow-400 text-center mb-10">Benvenuto a Sunrise Residence!</h2>
           <p className="text-lg text-gray-300 max-w-3xl mx-auto leading-8">
-Sunrise Residence si tratta di un appartamento recentemente ristrutturato e offre alloggio ad Alba. Questa sistemazione offre una vista sul cortile interno e un balcone. L&apos;appartamento dispone di camere climatizzate, parcheggio privato gratuito e connessione Wi-Fi gratuita.
+Siamo lieti di darti il benvenuto al Sunrise Residence, l&apos;ideale punto di partenza per il tuo soggiorno a Alba. Situato in una zona centrale, questo appartamento recentemente ristrutturato offre un perfetto equilibrio tra comfort, convenienza e stile. Che tu sia qui per turismo o lavoro, troverai in Sunrise Residence tutto ciò che ti serve per sentirti a casa.
           </p>
         </motion.div>
       </section>
@@ -128,9 +128,9 @@ Sunrise Residence si tratta di un appartamento recentemente ristrutturato e offr
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1 }}
         >
-          <h2 className="text-4xl font-bold text-yellow-400 text-center mb-10">Sunrise Residence</h2>
+          <h2 className="text-4xl font-bold text-yellow-400 text-center mb-10">Descrizione di Sunrise Residence</h2>
           <p className="text-lg text-gray-300 max-w-3xl mx-auto leading-8">
-La struttura è composta da due moderni appartamenti completamente attrezzati, con capacità per 4 persone ciascuno. Questa comoda posizione centrale è perfetta per coloro che desiderano visitare la città. Gli appartamenti sono stati progettati per offrire il massimo comfort e un soggiorno indimenticabile.
+Sunrise Residence è un appartamento moderno e spazioso, pensato per offrire un&apos;esperienza di soggiorno confortevole e rilassante. Con camere ampie, arredate con gusto.
           </p>
         </motion.div>
       </section>
@@ -138,9 +138,15 @@ La struttura è composta da due moderni appartamenti completamente attrezzati, c
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <Image src="/images/terraza.webp" alt="Terraza" width={600} height={400} className="rounded-lg" />
           <div>
-            <h3 className="text-yellow-400 text-2xl font-bold mb-4">Noi Offriamo</h3>
+            <h3 className="text-yellow-400 text-2xl font-bold mb-4">Cosa Offriamo</h3>
             <p className="text-gray-300 leading-7">
-              L&apos;appartamento dispone di terrazza, vista sulla città, area salotto, TV a schermo piatto, angolo cottura completamente attrezzato con lavastoviglie, forno a microonde, tostapane, frigorifero, macchinetta del caffè e bollitore. Il bagno privato è completo di bidet e asciugacapelli.
+              - Posizione centrale: A pochi passi dalle principali attrazioni turistiche, ristoranti e negozi.
+                   <br />
+                - Confortevoli camere: Camere climatizzate con Wi-Fi gratuito e una cucina completamente attrezzata.
+<br />
+                - Servizi inclusi: Parcheggio privato gratuito, lavanderia e biancheria da letto e da bagno fornita.
+<br />
+                - Qualità-prezzo eccellente: Un soggiorno comodo e conveniente senza compromettere la qualità.
             </p>
           </div>
         </div>
@@ -148,9 +154,9 @@ La struttura è composta da due moderni appartamenti completamente attrezzati, c
         <div className="flex justify-around flex-col md:flex-row gap-8 items-center md:flex-row-reverse">
           <Image src="/images/camara.webp" alt="Camera" width={600} height={400} className="rounded-lg" />
           <div>
-            <h3 className="text-yellow-400 text-2xl font-bold mb-4">Spazi confortevoli</h3>
+            <h3 className="text-yellow-400 text-2xl font-bold mb-4">Un Soggiorno Confortevole a Prezzi Competitivi</h3>
             <p className="text-gray-300 leading-7 mb-4">
-              Camere confortevoli, con ampia illuminazione. Ulteriori servizi in camera includono vino o champagne.
+              Che tu sia in viaggio da solo, in coppia o in famiglia, Sunrise Residence rappresenta una scelta ideale per chi cerca una sistemazione pratica e conveniente. Con la pulizia impeccabile, spazi ben progettati e una posizione strategica, ti garantiamo una permanenza senza stress, alla scoperta di Alba.
             </p>
             <a href="https://www.airbnb.it/users/show/475678499" className="inline-block border border-yellow-400 text-yellow-400 px-4 py-2 rounded hover:bg-yellow-400 hover:text-black transition">VIENI A TROVARCI SU AIRBNB</a>
           </div>
@@ -159,11 +165,11 @@ La struttura è composta da due moderni appartamenti completamente attrezzati, c
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <Image src="/images/cocina.webp" alt="Cocina" width={600} height={400} className="rounded-lg" />
           <div>
-            <h3 className="text-yellow-400 text-2xl font-bold mb-4">Buona Posizione</h3>
+            <h3 className="text-yellow-400 text-2xl font-bold mb-4">Prenota il Tuo Soggiorno Ora!</h3>
             <p className="text-gray-300 leading-7 mb-4">
-              Vicino all&apos;appartamento potete trovare diversi ristoranti, luoghi di intrattenimento e zone turistiche che vi consigliamo di visitare. L &apos;aeroporto più vicino è quello internazionale di Cuneo, a 46 km dall’appartamento.
+            Non aspettare! Prenota il tuo soggiorno al Sunrise Residence e vivi un&apos;esperienza unica, all&apos;insegna del comfort e del risparmio.
             </p>
-            <a href="https://facebook.com" className="inline-block border border-yellow-400 text-yellow-400 px-4 py-2 rounded hover:bg-yellow-400 hover:text-black transition">IL NOSTRO FACEBOOK</a>
+            <a href="https://www.facebook.com/profile.php?id=61553588529798" className="inline-block border border-yellow-400 text-yellow-400 px-4 py-2 rounded hover:bg-yellow-400 hover:text-black transition">IL NOSTRO FACEBOOK</a>
           </div>
         </div>
       </section>
@@ -467,7 +473,7 @@ La struttura è composta da due moderni appartamenti completamente attrezzati, c
           <a href="https://instagram.com/sunrise_residence_?igshid=YzAwZjE1ZTI0Zg%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" className="hover:text-black text-zinc-800">
             <FaInstagram />
           </a>
-          <a href="https://www.facebook.com/profile.php?id=61553588529798&locale=es_LA" target="_blank" rel="noopener noreferrer" className="hover:text-black text-zinc-800">
+          <a href="https://www.facebook.com/profile.php?id=61553588529798" target="_blank" rel="noopener noreferrer" className="hover:text-black text-zinc-800">
             <FaFacebookF />
           </a>
           <a href="https://www.x.com/AlbaResiden" target="_blank" rel="noopener noreferrer" className="hover:text-black text-zinc-800">
