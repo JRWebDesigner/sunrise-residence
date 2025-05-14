@@ -42,12 +42,11 @@ export default function HomeEn() {
               <Link href="/es"><div className="hover:text-yellow-400">Español</div></Link>
               <Link href="/en"><div className="hover:text-yellow-400">English</div></Link>
               <Link href="/"><div className="hover:text-yellow-400">Italiano</div></Link>
+              <Link href="/fr"><div className="hover:text-yellow-400">Frances</div></Link>
             </div>
           </div>
           <Link href="/host"><span className="hover:text-yellow-400">Your Host</span></Link>
           <Link href="https://www.facebook.com/profile.php?id=61553588529798&locale=es_LA"><span className="hover:text-yellow-400">Facebook</span></Link>
-          <Link href="https://www.booking.com/hotel/it/sunrise-veronica.html?aid=964694&app_hotel_id=10680979&checkin=2023-11-15&checkout=2023-11-16&from_sn=android&group_adults=3&group_children=0&label=hotel_details-5WyBiO%401700081590&no_rooms=1&req_adults=3&req_children=0&room1=A%2CA%2CA&lang=en-us&soz=1&lang_changed=1"><span className="hover:text-yellow-400">Booking.com</span></Link>
-          <Link href="https://www.airbnb.it/users/show/475678499"><span className="hover:text-yellow-400">Airbnb.com</span></Link>
         </div>
       </header>
 
@@ -71,6 +70,7 @@ export default function HomeEn() {
                 <Link href="/es" onClick={() => setOpen(false)}>Español</Link><br />
                 <Link href="/en" onClick={() => setOpen(false)}>English</Link><br />
                 <Link href="/" onClick={() => setOpen(false)}>Italiano</Link>
+                <Link href="/fr" onClick={() => setOpen(false)}>Frances</Link>
               </div>
             </div>
             <Link href="/host" onClick={() => setOpen(false)}>Your Host</Link>
@@ -153,7 +153,6 @@ export default function HomeEn() {
               <p className="text-gray-300 leading-7 mb-4">
                 Whether you&apos;re traveling solo, as a couple, or with family, Sunrise Residence is an ideal choice for those looking for practical and affordable accommodation. With spotless cleanliness, well-designed spaces, and a strategic location, we guarantee a stress-free stay while exploring Alba.
               </p>
-              <a href="https://www.airbnb.it/users/show/475678499" className="inline-block border border-yellow-400 text-yellow-400 px-4 py-2 rounded hover:bg-yellow-400 hover:text-black transition">VISIT US ON AIRBNB</a>
             </div>
           </div>
 
@@ -362,7 +361,7 @@ export default function HomeEn() {
     <div className="w-full aspect-video rounded-lg overflow-hidden shadow-lg">
       <iframe
         className="w-full h-full"
-        src="https://www.youtube.com/embed/0dZ9ePGGjtc"
+        src="https://www.youtube.com/embed/n8j3mMyA5xQ "
         title="Alba White Truffle International Fair"
         frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -382,7 +381,7 @@ export default function HomeEn() {
         <div className="w-full aspect-video rounded-lg overflow-hidden shadow-lg">
           <iframe
             className="w-full h-full"
-            src="https://www.youtube.com/embed/VmVKNWbnt6g"
+            src="https://www.youtube.com/embed/KWmqBGPGb8A"
             title="Barolo Video"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -507,7 +506,7 @@ export default function HomeEn() {
           <div className='text-center'>
             <h4 className='font-semibold text-white'>Sunrise Residence</h4>
             <p>Corso Langhe 1, 12051 Alba Cuneo, Italy</p>
-            <a href="https://wa.link/d0e69n" className='text-yellow-400'>+39 331 741 5002</a>
+            <a href="https://wa.link/d0e69n" className='text-yellow-400 text-3xl z-50'>+39 331 741 5002</a>
           </div>
         </div>
       </footer>
