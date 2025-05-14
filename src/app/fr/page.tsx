@@ -18,7 +18,7 @@ import { HiMenu, HiX } from 'react-icons/hi';
 import { motion, AnimatePresence } from 'framer-motion';
 
 
-export default function Home() {
+export default function HomeFr() {
   const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null);
   const images = Array.from({ length: 32 }, (_, i) => `/images/img-${i + 1}.webp`);
 
