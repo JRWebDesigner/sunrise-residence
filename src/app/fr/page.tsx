@@ -163,7 +163,7 @@ Sunrise Residence est un appartement moderne et spacieux, conçu pour offrir une
           <div>
             <h3 className="text-yellow-400 text-2xl font-bold mb-4">Réservez votre séjour maintenant !</h3>
             <p className="text-gray-300 leading-7 mb-4">
-            N'attendez pas ! Réservez votre séjour à Sunrise Residence et vivez une expérience unique, alliant confort et économies.
+            N&lsquo;attendez pas ! Réservez votre séjour à Sunrise Residence et vivez une expérience unique, alliant confort et économies.
             </p>
             <a href="https://www.facebook.com/profile.php?id=61553588529798" className="inline-block border border-yellow-400 text-yellow-400 px-4 py-2 rounded hover:bg-yellow-400 hover:text-black transition">NOTRE FACEBOOK</a>
           </div>
@@ -318,7 +318,7 @@ Sunrise Residence est un appartement moderne et spacieux, conçu pour offrir une
               <ul className="list-disc ml-6">
                 <li><strong>Restaurants et cafés</strong></li>
                 <li>Zenzero & Caffè (50m)</li>
-                <li>Hope's Food (100m)</li>
+                <li>Hopes Food (100m)</li>
                 <li>Piccolo Caffè (100m)</li>
                 <li><strong>Beautés naturelles</strong></li>
                 <li>Monte Passo della Bossola (22 km)</li>
@@ -328,7 +328,7 @@ Sunrise Residence est un appartement moderne et spacieux, conçu pour offrir une
                 <li>Pineta (47km)</li>
                 <li>Sapel (47 km)</li>
                 <li><strong>Transports publics</strong></li>
-                <li>Gare d'Alba (500 m)</li>
+                <li>Gare d&lsquo;Alba (500 m)</li>
                 <li>Gare de Mussotto (2,6 km)</li>
                 <li>Station de bus (39m)</li>
                 <li>Station de taxis (100m)</li>
