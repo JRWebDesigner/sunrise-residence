@@ -42,6 +42,7 @@ export default function Home() {
               <Link href="/es"><div className="hover:text-yellow-400">Español</div></Link>
               <Link href="/en"><div className="hover:text-yellow-400">English</div></Link>
               <Link href="/"><div className="hover:text-yellow-400">Italiano</div></Link>
+               <Link href="/fr"><div className="hover:text-yellow-400">Frances</div></Link>
             </div>
           </div>
           <Link href="/host"><span className="hover:text-yellow-400">Your Host</span></Link>
@@ -69,6 +70,7 @@ export default function Home() {
                 <Link href="/es" onClick={() => setOpen(false)}>Español</Link><br />
                 <Link href="/en" onClick={() => setOpen(false)}>English</Link><br />
                 <Link href="/" onClick={() => setOpen(false)}>Italiano</Link>
+                 <Link href="/fr" onClick={() => setOpen(false)}>Frances</Link>
               </div>
             </div>
             <Link href="/host" onClick={() => setOpen(false)}>Your Host</Link>
