@@ -70,6 +70,7 @@ export default function Home() {
                 <Link href="/es" onClick={() => setOpen(false)}>Español</Link><br />
                 <Link href="/en" onClick={() => setOpen(false)}>English</Link><br />
                 <Link href="/" onClick={() => setOpen(false)}>Italiano</Link>
+                 <br />
                  <Link href="/fr" onClick={() => setOpen(false)}>Frances</Link>
               </div>
             </div>
