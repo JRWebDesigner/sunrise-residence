@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import {ReactNode} from 'react'
-import {useLocal} from 'next-intl'
+import {useLocale} from 'next-intl'
 import "./globals.css";
 import { FaWhatsapp } from 'react-icons/fa';
 
