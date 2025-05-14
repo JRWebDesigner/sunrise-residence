@@ -464,19 +464,19 @@ La struttura è composta da due moderni appartamenti completamente attrezzati, c
       <section className="bg-yellow-400 text-black py-10 text-center">
         <h3 className="text-2xl font-bold mb-6">Síguenos</h3>
         <div className="flex justify-center gap-10 text-3xl">
-          <a href="https://instagram.com/sunriseresidence" target="_blank" rel="noopener noreferrer" className="hover:text-black text-zinc-800">
+          <a href="https://instagram.com/sunrise_residence_?igshid=YzAwZjE1ZTI0Zg%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" className="hover:text-black text-zinc-800">
             <FaInstagram />
           </a>
-          <a href="https://instagram.com/sunrise_residence_?igshid=YzAwZjE1ZTI0Zg%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" className="hover:text-black text-zinc-800">
+          <a href="https://www.facebook.com/profile.php?id=61553588529798&locale=es_LA" target="_blank" rel="noopener noreferrer" className="hover:text-black text-zinc-800">
             <FaFacebookF />
           </a>
-          <a href="https://twitter.com/sunriseresidence" target="_blank" rel="noopener noreferrer" className="hover:text-black text-zinc-800">
+          <a href="https://www.x.com/AlbaResiden" target="_blank" rel="noopener noreferrer" className="hover:text-black text-zinc-800">
             <FaTwitter />
           </a>
           <a href="https://www.tiktok.com/@_sunrise_residence?_t=8hzWij28TIG&_r=1" target="_blank" rel="noopener noreferrer" className="hover:text-black text-zinc-800">
             <FaTiktok />
           </a>
-          <a href="https://youtube.com/sunriseresidence" target="_blank" rel="noopener noreferrer" className="hover:text-black text-zinc-800">
+          <a href="https://www.youtube.com/@SunriseResidence0" target="_blank" rel="noopener noreferrer" className="hover:text-black text-zinc-800">
             <FaYoutube />
           </a>
         </div>
@@ -550,7 +550,7 @@ La struttura è composta da due moderni appartamenti completamente attrezzati, c
           <div className='text-center'>
             <h4 className='font-semibold text-white'>Sunrise Residence</h4>
             <p>Corso Langhe 1, 12051 Alba Cuneo, Italy</p>
-            <p className='text-yellow-400'>+39 331 741 5002</p>
+            <a href="https://wa.link/d0e69n" className='text-yellow-400'>+39 331 741 5002</a>
           </div>
         </div>
       </footer>
