@@ -31,7 +31,7 @@ export default function Home() {
         </button>
 
         <div className="flex flex-col items-center">
-          <Image src="/images/logo.webp" alt="Logo" width={160} height={160} className="w-40" />
+          <Image src="/images/logo.webp" alt="Logo" width={200} height={200} className="w-48" />
         </div>
 
         <div className="hidden md:flex items-center gap-6">
@@ -80,11 +80,11 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative h-[40dvh] md:h-[100dvh] flex items-center justify-center overflow-hidden">
   <Image
-    src="/images/fachada.webp"
+    src="/images/sobre.webp"
     fill
     style={{ objectPosition: 'center' }}
     alt="Fachada Sunrise Residence"
-    className="opacity-40 md:object-cover object-contain"
+    className="opacity-60 md:object-cover object-contain"
     priority
   />
   <motion.div
