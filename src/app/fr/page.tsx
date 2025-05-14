@@ -364,7 +364,7 @@ Sunrise Residence est un appartement moderne et spacieux, conçu pour offrir une
               />
               <h3 className="text-yellow-400 text-2xl font-semibold mb-2">La Foire Internationale de la Truffe</h3>
               <p>
-                C'est la manifestation gastronomique la plus importante du Piémont. Chaque année au mois d'octobre, pendant près de deux mois, Alba et ses environs célèbrent le précieux Tartufo d'Alba avec un programme très riche d'événements entre expositions, démonstrations culinaires, rencontres et dégustations.
+                C&lsquo;est la manifestation gastronomique la plus importante du Piémont. Chaque année au mois d&lsquo;octobre, pendant près de deux mois, Alba et ses environs célèbrent le précieux Tartufo d&lsquo;Alba avec un programme très riche d&lsquo;événements entre expositions, démonstrations culinaires, rencontres et dégustations.
               </p>
             </div>
             <div>
@@ -378,7 +378,7 @@ Sunrise Residence est un appartement moderne et spacieux, conçu pour offrir une
                   />
               <h3 className="text-yellow-400 text-2xl font-semibold mb-2">La Foire Internationale de la Truffe</h3>
               <p>
-                La truffe, fruit précieux et rare de la terre, est célébrée dans de nombreuses villes italiennes à différentes périodes de l'année. Les truffes blanches et noires sont souvent présentes sur les stands de dégustation des nombreuses manifestations automnales ou dans les premiers mois de l'année qui leur sont consacrées ainsi qu'aux autres produits liés à ce tubercule. Si vous êtes un amateur de truffes et un bon vivant, ne manquez pas ces événements !
+                La truffe, fruit précieux et rare de la terre, est célébrée dans de nombreuses villes italiennes à différentes périodes de l&lsquo;année. Les truffes blanches et noires sont souvent présentes sur les stands de dégustation des nombreuses manifestations automnales ou dans les premiers mois de l&lsquo;année qui leur sont consacrées ainsi qu'aux autres produits liés à ce tubercule. Si vous êtes un amateur de truffes et un bon vivant, ne manquez pas ces événements !
               </p>
             </div>
             <div>
@@ -392,7 +392,7 @@ Sunrise Residence est un appartement moderne et spacieux, conçu pour offrir une
                   />
               <h3 className="text-yellow-400 text-2xl font-semibold mb-2">La Foire Internationale de la Truffe</h3>
               <p>
-                Le cœur de la Foire de la Truffe d'Alba est, comme chaque année, le Marché Mondial de la Truffe Blanche d'Alba, le lieu où acheter les truffes du territoire du Montferrat, du Roero et des Langhe. Dans cet espace, il y a également un espace dédié à la cuisine appelé Alba Truffle Show. Il s'agit d'un grand contenant d'événements gastronomiques et culturels qui célèbrent l'excellence du produit. Les week-ends de la foire, des chefs nationaux et internationaux, des écrivains, des artistes, des chefs locaux et des designers seront présents.
+                Le cœur de la Foire de la Truffe d&lsquo;Alba est, comme chaque année, le Marché Mondial de la Truffe Blanche d&lsquo;Alba, le lieu où acheter les truffes du territoire du Montferrat, du Roero et des Langhe. Dans cet espace, il y a également un espace dédié à la cuisine appelé Alba Truffle Show. Il s&lsquo;agit d&lsquo;un grand contenant d&lsquo;événements gastronomiques et culturels qui célèbrent l&lsquo;excellence du produit. Les week-ends de la foire, des chefs nationaux et internationaux, des écrivains, des artistes, des chefs locaux et des designers seront présents.
               </p>
             </div>
           </div>
@@ -421,7 +421,7 @@ Sunrise Residence est un appartement moderne et spacieux, conçu pour offrir une
               <Image src="/images/barolo1.webp" alt="Barolo" width={600} height={400} className="mx-auto rounded-lg" />
               <h3 className="text-yellow-400 text-xl font-bold">Barolo</h3>
               <p className="text-gray-300">
-                Barolo est l'une des anciennes communes dont le territoire permet de cultiver le raisin Nebbiolo, utilisé pour produire le fameux vin qui donne son nom à la ville. Aujourd'hui, cette petite ville est connue dans le monde entier pour son offre gastronomique et culturelle.
+                Barolo est l&lsquo;une des anciennes communes dont le territoire permet de cultiver le raisin Nebbiolo, utilisé pour produire le fameux vin qui donne son nom à la ville. Aujourd&lsquo;hui, cette petite ville est connue dans le monde entier pour son offre gastronomique et culturelle.
               </p>
             </div>
             <div className="text-center space-y-4">
@@ -437,7 +437,7 @@ Sunrise Residence est un appartement moderne et spacieux, conçu pour offrir une
               </div>
               <h3 className="text-yellow-400 text-xl font-bold">Barolo</h3>
               <p className="text-gray-300">
-                L'un d'eux est le "Barolo Wine Festival", qui a lieu le deuxième dimanche de septembre et attire l'attention des touristes, y compris internationaux.
+                L&lsquo;un d&lsquo;eux est le Barolo Wine Festival, qui a lieu le deuxième dimanche de septembre et attire l&lsquo;attention des touristes, y compris internationaux.
               </p>
             </div>
           </div>
@@ -455,7 +455,7 @@ Sunrise Residence est un appartement moderne et spacieux, conçu pour offrir une
           </div>
           <div className="text-gray-300 text-xl leading-relaxed">
             <p className="italic text-white text-2xl mb-4">
-              "Accueil très chaleureux. Appartement propre et bien équipé. L'emplacement est excellent, proche du centre."
+              Accueil très chaleureux. Appartement propre et bien équipé. L'emplacement est excellent, proche du centres
             </p>
             <p className="text-yellow-400 font-semibold">Michel (Suisse)</p>
           </div>
