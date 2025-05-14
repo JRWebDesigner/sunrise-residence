@@ -327,7 +327,7 @@ export default function Page() {
   <ul className="list-disc ml-6">
     <li><strong>Restaurantes y cafeterías </strong></li>
     <li>Zenzero & Café (50 m)</li>
-    <li>Hope's Food (100 m)</li>
+    <li>Hopes Food (100 m)</li>
     <li>Piccolo Caffè (100 m)</li>
 
     <li><strong>Belleza natural </strong></li>
