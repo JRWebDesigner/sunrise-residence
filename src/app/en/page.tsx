@@ -18,7 +18,7 @@ import { HiMenu, HiX } from 'react-icons/hi';
 import { motion, AnimatePresence } from 'framer-motion';
 
 
-export default function HomeEN() {
+export default function HomeEn() {
   const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null);
   const images = Array.from({ length: 32 }, (_, i) => `/images/img-${i + 1}.webp`);
 
@@ -114,7 +114,7 @@ export default function HomeEN() {
           >
             <h2 className="text-4xl font-bold text-yellow-400 text-center mb-10">Welcome to Sunrise Residence!</h2>
             <p className="text-lg text-gray-300 max-w-3xl mx-auto leading-8">
-              We are pleased to welcome you to Sunrise Residence, the ideal starting point for your stay in Alba. Located in a central area, this recently renovated apartment offers a perfect balance of comfort, convenience, and style. Whether you're here for tourism or work, you'll find everything you need to feel at home at Sunrise Residence.
+              We are pleased to welcome you to Sunrise Residence, the ideal starting point for your stay in Alba. Located in a central area, this recently renovated apartment offers a perfect balance of comfort, convenience, and style. Whether you&apos;re here for tourism or work, you&apos;ll find everything you need to feel at home at Sunrise Residence.
             </p>
           </motion.div>
         </section>
@@ -151,7 +151,7 @@ export default function HomeEN() {
             <div>
               <h3 className="text-yellow-400 text-2xl font-bold mb-4">A Comfortable Stay at Competitive Prices</h3>
               <p className="text-gray-300 leading-7 mb-4">
-                Whether you're traveling solo, as a couple, or with family, Sunrise Residence is an ideal choice for those looking for practical and affordable accommodation. With spotless cleanliness, well-designed spaces, and a strategic location, we guarantee a stress-free stay while exploring Alba.
+                Whether you&apos;re traveling solo, as a couple, or with family, Sunrise Residence is an ideal choice for those looking for practical and affordable accommodation. With spotless cleanliness, well-designed spaces, and a strategic location, we guarantee a stress-free stay while exploring Alba.
               </p>
               <a href="https://www.airbnb.it/users/show/475678499" className="inline-block border border-yellow-400 text-yellow-400 px-4 py-2 rounded hover:bg-yellow-400 hover:text-black transition">VISIT US ON AIRBNB</a>
             </div>
@@ -162,7 +162,7 @@ export default function HomeEN() {
             <div>
               <h3 className="text-yellow-400 text-2xl font-bold mb-4">Book Your Stay Now!</h3>
               <p className="text-gray-300 leading-7 mb-4">
-                Don't wait! Book your stay at Sunrise Residence and enjoy a unique experience, full of comfort and savings.
+                Don&apos;t wait! Book your stay at Sunrise Residence and enjoy a unique experience, full of comfort and savings.
               </p>
               <a href="https://facebook.com" className="inline-block border border-yellow-400 text-yellow-400 px-4 py-2 rounded hover:bg-yellow-400 hover:text-black transition">OUR FACEBOOK</a>
             </div>
@@ -303,7 +303,7 @@ export default function HomeEN() {
         <ul className="list-disc ml-6">
           <li><strong>Restaurants and Cafes</strong></li>
           <li>Zenzero & Caffè (50m)</li>
-          <li>Hope's Food (100m)</li>
+          <li>Hope&apos;s Food (100m)</li>
           <li>Piccolo Caffè (100m)</li>
           <li><strong>Natural Attractions</strong></li>
           <li>Monte Passo della Bossola (22 km)</li>
@@ -344,14 +344,14 @@ export default function HomeEN() {
         <Image src="/images/atr2.webp" width={600} height={400} objectFit="cover" alt="image" className="rounded-3xl mx-auto mb-7" />
         <h3 className="text-yellow-400 text-2xl font-semibold mb-2">The International Truffle Fair</h3>
         <p>
-          The truffle, a precious and rare fruit of the earth, is celebrated in many Italian cities at various times of the year. Both white and black truffles are often found at tasting booths in many fall festivals or events early in the year dedicated to this tuber and its related products. If you're a truffle lover and a foodie, don’t miss these events!
+          The truffle, a precious and rare fruit of the earth, is celebrated in many Italian cities at various times of the year. Both white and black truffles are often found at tasting booths in many fall festivals or events early in the year dedicated to this tuber and its related products. If you&apos;re a truffle lover and a foodie, don’t miss these events!
         </p>
       </div>
       <div>
         <Image src="/images/atr3.webp" width={600} height={400} objectFit="cover" alt="image" className="rounded-3xl mx-auto mb-7" />
         <h3 className="text-yellow-400 text-2xl font-semibold mb-2">The International Truffle Fair</h3>
         <p>
-          The heart of the Alba Truffle Fair is, as every year, the World Market of the Alba White Truffle—the place to buy truffles from the Monferrato, Roero, and Langhe areas. Inside this space, there's also the Alba Truffle Show, a large venue for food and cultural events celebrating the excellence of local flavor. On fair weekends, national and international chefs, writers, artists, local chefs, and designers are featured.
+          The heart of the Alba Truffle Fair is, as every year, the World Market of the Alba White Truffle—the place to buy truffles from the Monferrato, Roero, and Langhe areas. Inside this space, there&apos;s also the Alba Truffle Show, a large venue for food and cultural events celebrating the excellence of local flavor. On fair weekends, national and international chefs, writers, artists, local chefs, and designers are featured.
         </p>
       </div>
     </div>
