@@ -549,7 +549,7 @@ Sunrise Residence è un appartamento moderno e spazioso, pensato per offrire un&
           <div className='text-center'>
             <h4 className='font-semibold text-white'>Sunrise Residence</h4>
             <p>Corso Langhe 1, 12051 Alba Cuneo, Italy</p>
-            <a href="https://wa.link/d0e69n" className='text-yellow-400 text-3xl'>+39 331 741 5002</a>
+            <a href="https://wa.link/d0e69n" className='relative z-50 text-yellow-400 text-3xl'>+39 331 741 5002</a>
           </div>
         </div>
       </footer>
