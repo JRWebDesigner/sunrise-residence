@@ -535,7 +535,7 @@ Sunrise Residence est un appartement moderne et spacieux, conçu pour offrir une
         </div>
       </section>
       {/* Contact */}
-        <footer className='bg-zinc-900 text-gray-300 text-sm py-12 px-6 md:px-20'>
+        <footer className='relative z-50 bg-zinc-900 text-gray-300 text-sm py-12 px-6 md:px-20'>
         <div className='max-w-6xl mx-auto flex flex-col items-center gap-6'>
           <nav className='flex gap-6 text-xs uppercase tracking-wide'>
             <a href='#' className='border-b border-yellow-400 text-yellow-400'>Accueil</a>

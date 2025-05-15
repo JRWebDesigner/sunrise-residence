@@ -486,14 +486,12 @@ export default function HomeEn() {
         </div>
       </section>
       {/* Contacto */}
-        <footer className='bg-zinc-900 text-gray-300 text-sm py-12 px-6 md:px-20'>
+        <footer className='relative z-50 bg-zinc-900 text-gray-300 text-sm py-12 px-6 md:px-20'>
         <div className='max-w-6xl mx-auto flex flex-col items-center gap-6'>
           <nav className='flex gap-6 text-xs uppercase tracking-wide'>
             <a href='#' className='border-b border-yellow-400 text-yellow-400'>Home</a>
             <a href='#host' className='hover:text-yellow-400'>Your Host</a>
             <a href='https://www.facebook.com/profile.php?id=61553588529798&locale=es_LA' className='hover:text-yellow-400'>Facebook</a>
-            <a href='https://www.booking.com/hotel/it/sunrise-veronica.html?aid=964694&app_hotel_id=10680979&checkin=2023-11-15&checkout=2023-11-16&from_sn=android&group_adults=3&group_children=0&label=hotel_details-5WyBiO%401700081590&no_rooms=1&req_adults=3&req_children=0&room1=A%2CA%2CA&lang=en-us&soz=1&lang_changed=1' className='hover:text-yellow-400'>Booking.com</a>
-            <a href='https://www.airbnb.it/users/show/475678499' className='hover:text-yellow-400'>Airbnb.com</a>
           </nav>
           <div className='flex gap-6 text-xl'>
             <a href='https://www.facebook.com/profile.php?id=61553588529798&locale=es_LA'><FaFacebookF /></a>

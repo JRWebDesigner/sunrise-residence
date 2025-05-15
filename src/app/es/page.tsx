@@ -47,8 +47,6 @@ export default function Page() {
           </div>
           <Link href="/host"><span className="hover:text-yellow-400">Your Host</span></Link>
           <Link href="https://www.facebook.com/profile.php?id=61553588529798&locale=es_LA"><span className="hover:text-yellow-400">Facebook</span></Link>
-          <Link href="https://www.booking.com/hotel/it/sunrise-veronica.html?aid=964694&app_hotel_id=10680979&checkin=2023-11-15&checkout=2023-11-16&from_sn=android&group_adults=3&group_children=0&label=hotel_details-5WyBiO%401700081590&no_rooms=1&req_adults=3&req_children=0&room1=A%2CA%2CA&lang=en-us&soz=1&lang_changed=1"><span className="hover:text-yellow-400">Booking.com</span></Link>
-          <Link href="https://www.airbnb.it/users/show/475678499"><span className="hover:text-yellow-400">Airbnb.com</span></Link>
         </div>
       </header>
 
@@ -71,7 +69,8 @@ export default function Page() {
               <div className="pl-4 mt-2 text-base">
                 <Link href="/es" onClick={() => setOpen(false)}>Español</Link><br />
                 <Link href="/en" onClick={() => setOpen(false)}>English</Link><br />
-                <Link href="/" onClick={() => setOpen(false)}>Italiano</Link>
+                <Link href="/" onClick={() => setOpen(false)}>Italiano</Link><br />
+                <Link href="/fr" onClick={() => setOpen(false)}>Francia</Link>
               </div>
             </div>
             <Link href="/host" onClick={() => setOpen(false)}>Your Host</Link>
@@ -155,7 +154,6 @@ export default function Page() {
               <p className="text-gray-300 leading-7 mb-4">
                 Ya sea que viajes solo, en pareja o en familia, Sunrise Residence representa una elección ideal para quienes buscan un alojamiento práctico y económico. Con limpieza impecable, espacios bien diseñados y una ubicación estratégica, te garantizamos una estadía sin estrés, descubriendo Alba.
               </p>
-              <a href="https://www.airbnb.it/users/show/475678499" className="inline-block border border-yellow-400 text-yellow-400 px-4 py-2 rounded hover:bg-yellow-400 hover:text-black transition">VEN A VISITARNOS EN AIRBNB</a>
             </div>
           </div>
 
@@ -432,7 +430,7 @@ export default function Page() {
           <div className="w-full aspect-video rounded-lg overflow-hidden shadow-lg">
             <iframe
               className="w-full h-full"
-              src="https://www.youtube.com/embed/0dZ9ePGGjtc"
+              src="https://www.youtube.com/embed/n8j3mMyA5xQ"
               title="Fiera Internazionale del Tartufo Bianco d&apos;Alba"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -452,7 +450,7 @@ export default function Page() {
               <div className="w-full aspect-video rounded-lg overflow-hidden shadow-lg">
                 <iframe
                   className="w-full h-full"
-                  src="https://www.youtube.com/embed/VmVKNWbnt6g"
+                  src="https://www.youtube.com/embed/KWmqBGPGb8A"
                   title="Video Barolo"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -557,14 +555,12 @@ export default function Page() {
         </div>
       </section>
       {/* Contacto */}
-        <footer className='bg-zinc-900 text-gray-300 text-sm py-12 px-6 md:px-20'>
+        <footer className='relative z-50 bg-zinc-900 text-gray-300 text-sm py-12 px-6 md:px-20'>
         <div className='max-w-6xl mx-auto flex flex-col items-center gap-6'>
           <nav className='flex gap-6 text-xs uppercase tracking-wide'>
             <a href='#' className='border-b border-yellow-400 text-yellow-400'>Home</a>
             <a href='#host' className='hover:text-yellow-400'>Your Host</a>
             <a href='https://www.facebook.com/profile.php?id=61553588529798&locale=es_LA' className='hover:text-yellow-400'>Facebook</a>
-            <a href='https://www.booking.com/hotel/it/sunrise-veronica.html?aid=964694&app_hotel_id=10680979&checkin=2023-11-15&checkout=2023-11-16&from_sn=android&group_adults=3&group_children=0&label=hotel_details-5WyBiO%401700081590&no_rooms=1&req_adults=3&req_children=0&room1=A%2CA%2CA&lang=en-us&soz=1&lang_changed=1' className='hover:text-yellow-400'>Booking.com</a>
-            <a href='https://www.airbnb.it/users/show/475678499' className='hover:text-yellow-400'>Airbnb.com</a>
           </nav>
           <div className='flex gap-6 text-xl'>
             <a href='https://www.facebook.com/profile.php?id=61553588529798&locale=es_LA'><FaFacebookF /></a>
@@ -576,7 +572,7 @@ export default function Page() {
           <div className='text-center'>
             <h4 className='font-semibold text-white'>Sunrise Residence</h4>
             <p>Corso Langhe 1, 12051 Alba Cuneo, Italy</p>
-            <a href="https://wa.link/d0e69n" className='text-yellow-400'>+39 331 741 5002</a>
+            <a href="https://wa.link/d0e69n" className='text-yellow-400 text-3xl'>+39 331 741 5002</a>
           </div>
         </div>
       </footer>
