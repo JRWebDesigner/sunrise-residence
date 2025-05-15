@@ -71,7 +71,7 @@ export default function Page() {
                 <Link href="/es" onClick={() => setOpen(false)}>Español</Link><br />
                 <Link href="/en" onClick={() => setOpen(false)}>English</Link><br />
                 <Link href="/" onClick={() => setOpen(false)}>Italiano</Link><br />
-                <Link href="/fr" onClick={() => setOpen(false)}>Francia</Link>
+                <Link href="/fr" onClick={() => setOpen(false)}>Frances</Link>
               </div>
             </div>
             <Link href="/host" onClick={() => setOpen(false)}>Your Host</Link>
