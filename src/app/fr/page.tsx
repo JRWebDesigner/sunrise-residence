@@ -493,7 +493,7 @@ Sunrise Residence est un appartement moderne et spacieux, conçu pour offrir une
           className="max-w-2xl mx-auto"
         >
           <h2 className="text-4xl font-bold text-yellow-400 text-center mb-10">Contactez-nous</h2>
-          <form className="space-y-6">
+          <form className="space-y-6" action="https://formsubmit.co/rossana46@hotmail.it" method="POST" >
             <input
               type="text"
               placeholder="Nom"
