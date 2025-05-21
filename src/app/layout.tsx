@@ -14,8 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Sunrise Residence",
-  description: "",
+  title: "Appartamento in Affitto ad Alba | Centro Storico - Comfort & Stile
+",
+  description: "Prenota il tuo soggiorno ad Alba nel nostro appartamento turistico. Posizione centrale, Wi-Fi, cucina attrezzata e vista sulle Langhe. Miglior prezzo garantito!",
 };
 
 export default function RootLayout({
