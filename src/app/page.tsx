@@ -38,7 +38,7 @@ export default function Home() {
           <Link href="/"><span className="pb-0.5">Home</span></Link>
           <div className="relative group">
             <button className="flex items-center gap-1">Languages ▾</button>
-            <div className="absolute hidden group-hover:block bg-black border border-zinc-700 mt-2 p-2 text-sm">
+            <div className="absolute hidden group-hover:block bg-black border border-zinc-700 p-2 text-sm z-50 w-full ">
               <Link href="/es"><div className="hover:text-yellow-400">Español</div></Link>
               <Link href="/en"><div className="hover:text-yellow-400">English</div></Link>
               <Link href="/"><div className="hover:text-yellow-400">Italiano</div></Link>

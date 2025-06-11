@@ -12,8 +12,8 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://tusitio.com/",
     languages: {
-      "it": "https://tusitio.com/",
-      "fr": "https://tusitio.com/fr",
+      "it": "https://sunriseresidencealba.com/",
+      "fr": "https://sunriseresidencealba.com/fr",
     },
   },
 };
