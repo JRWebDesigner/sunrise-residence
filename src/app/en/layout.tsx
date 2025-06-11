@@ -7,8 +7,8 @@ const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Sunrise Residence",
-  description: "Bienvenue à Sunrise Residence",
+  title: "Sunrise Residence Alba",
+  description: "Prenota il tuo soggiorno ad Alba nel nostro appartamento turistico. Posizione centrale, Wi-Fi, cucina attrezzata e vista sulle Langhe. Miglior prezzo garantito!",
   alternates: {
     canonical: "https://sunriseresidencealba.com/en",
     languages: {
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function FrenchLayout({ children }: { children: React.ReactNode }) {
+export default function EnglLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
