@@ -36,17 +36,17 @@ export default function Page() {
         </div>
 
         <div className="hidden md:flex items-center gap-6">
-          <Link href="/"><span className="pb-0.5">Home</span></Link>
+          <Link href="/"><span className="pb-0.5">Inicio</span></Link>
           <div className="relative group">
-            <button className="flex items-center gap-1">Languages ▾</button>
-            <div className="absolute hidden group-hover:block bg-black border border-zinc-700 mt-2 p-2 text-sm">
+            <button className="flex items-center gap-1">Lenguage ▾</button>
+            <div className="absolute hidden group-hover:block bg-black border border-zinc-700 mt-2 p-2 text-sm w-full z-50">
               <Link href="/es"><div className="hover:text-yellow-400">Español</div></Link>
               <Link href="/en"><div className="hover:text-yellow-400">English</div></Link>
               <Link href="/"><div className="hover:text-yellow-400">Italiano</div></Link>
               <Link href="/fr"><div className="hover:text-yellow-400">Frances</div></Link>
             </div>
           </div>
-          <Link href="/host"><span className="hover:text-yellow-400">Your Host</span></Link>
+          <Link href="/host"><span className="hover:text-yellow-400">Tu Anfitrion</span></Link>
           <Link href="https://www.facebook.com/profile.php?id=61553588529798&locale=es_LA"><span className="hover:text-yellow-400">Facebook</span></Link>
         </div>
       </header>
@@ -58,15 +58,15 @@ export default function Page() {
             animate={{ x: 0 }}
             exit={{ x: '-100%' }}
             transition={{ type: 'tween' }}
-            className="fixed top-0 left-0 w-full h-full bg-zinc-900 text-white z-50 px-10 py-8 flex flex-col gap-6 text-xl font-bold uppercase"
+            className="fixed top-0 left-0 w-full h-full bg-zinc-900 text-white z-50 px-10 py-8 flex flex-col gap-6 text-xl font-bold"
           >
             <button className="self-end text-3xl mb-6" onClick={() => setOpen(false)}>
               <HiX />
             </button>
 
-            <Link href="/" onClick={() => setOpen(false)}>Home</Link>
+            <Link href="/" onClick={() => setOpen(false)}>Inicio</Link>
             <div>
-              <span>Languages ▾</span>
+              <span>Lenguage ▾</span>
               <div className="pl-4 mt-2 text-base">
                 <Link href="/es" onClick={() => setOpen(false)}>Español</Link><br />
                 <Link href="/en" onClick={() => setOpen(false)}>English</Link><br />
@@ -74,7 +74,7 @@ export default function Page() {
                 <Link href="/fr" onClick={() => setOpen(false)}>Frances</Link>
               </div>
             </div>
-            <Link href="/host" onClick={() => setOpen(false)}>Your Host</Link>
+            <Link href="/host" onClick={() => setOpen(false)}>Tu Anfitrion</Link>
             <Link href="https://www.facebook.com/profile.php?id=61553588529798" onClick={() => setOpen(false)}>Facebook</Link>
               </motion.aside>
         )}

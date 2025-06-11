@@ -14,6 +14,8 @@ export const metadata: Metadata = {
     languages: {
       "it": "https://sunriseresidencealba.com/",
       "fr": "https://sunriseresidencealba.com/fr",
+      "es": "https://sunriseresidencealba.com/es",
+      "en": "https://sunriseresidencealba.com/en",
     },
   },
 };

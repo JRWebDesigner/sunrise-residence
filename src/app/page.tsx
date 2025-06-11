@@ -25,7 +25,7 @@ export default function Home() {
   const [open, setOpen] = useState(false);
    return (
     <main className="bg-black text-white min-h-screen font-sans">
-       <header className="w-full bg-zinc-900 px-6 py-4 flex justify-between items-center text-xl font-bold uppercase text-white">
+       <header className="w-full bg-zinc-900 px-6 py-4 flex justify-between items-center text-xl font-bold text-white">
         <button className="md:hidden text-3xl" onClick={() => setOpen(true)}>
           <HiMenu />
         </button>
@@ -57,7 +57,7 @@ export default function Home() {
             animate={{ x: 0 }}
             exit={{ x: '-100%' }}
             transition={{ type: 'tween' }}
-            className="fixed top-0 left-0 w-full h-full bg-zinc-900 text-white z-50 px-10 py-8 flex flex-col gap-6 text-xl font-bold uppercase"
+            className="fixed top-0 left-0 w-full h-full bg-zinc-900 text-white z-50 px-10 py-8 flex flex-col gap-6 text-xl font-bold"
           >
             <button className="self-end text-3xl mb-6" onClick={() => setOpen(false)}>
               <HiX />

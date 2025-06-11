@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 
 export default function FrenchLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="fr">
+    <html lang="es">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
       </body>

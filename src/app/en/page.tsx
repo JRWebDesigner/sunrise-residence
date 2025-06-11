@@ -25,7 +25,7 @@ export default function HomeEn() {
   const [open, setOpen] = useState(false);
    return (
     <main className="bg-black text-white min-h-screen font-sans">
-<header className="w-full bg-zinc-900 px-6 py-4 flex justify-between items-center text-xl font-bold uppercase text-white">
+<header className="w-full bg-zinc-900 px-6 py-4 flex justify-between items-center text-xl font-bold text-white">
         <button className="md:hidden text-3xl" onClick={() => setOpen(true)}>
           <HiMenu />
         </button>
@@ -38,7 +38,7 @@ export default function HomeEn() {
           <Link href="/"><span className="pb-0.5">Home</span></Link>
           <div className="relative group">
             <button className="flex items-center gap-1">Languages ▾</button>
-            <div className="absolute hidden group-hover:block bg-black border border-zinc-700 mt-2 p-2 text-sm">
+            <div className="absolute hidden group-hover:block bg-black border border-zinc-700 mt-2 p-2 text-sm w-full z-50">
               <Link href="/es"><div className="hover:text-yellow-400">Español</div></Link>
               <Link href="/en"><div className="hover:text-yellow-400">English</div></Link>
               <Link href="/"><div className="hover:text-yellow-400">Italiano</div></Link>
@@ -57,7 +57,7 @@ export default function HomeEn() {
             animate={{ x: 0 }}
             exit={{ x: '-100%' }}
             transition={{ type: 'tween' }}
-            className="fixed top-0 left-0 w-full h-full bg-zinc-900 text-white z-50 px-10 py-8 flex flex-col gap-6 text-xl font-bold uppercase"
+            className="fixed top-0 left-0 w-full h-full bg-zinc-900 text-white z-50 px-10 py-8 flex flex-col gap-6 text-xl font-bold"
           >
             <button className="self-end text-3xl mb-6" onClick={() => setOpen(false)}>
               <HiX />
