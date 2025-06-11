@@ -7,8 +7,8 @@ const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Sunrise Residence Alba",
-  description: "Prenota il tuo soggiorno ad Alba nel nostro appartamento turistico. Posizione centrale, Wi-Fi, cucina attrezzata e vista sulle Langhe. Miglior prezzo garantito!",
+  title: "Apartamento céntrico con terraza en Alba – Sunrise Residence",
+  description: "Descubre Sunrise Residence en Alba, alojamiento céntrico con terraza, WiFi y parking gratuitos. A pocos pasos de las principales atracciones. ¡Reserva ahora!",
   alternates: {
     canonical: "https://sunriseresidencealba.com/es",
     languages: {
