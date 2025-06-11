@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function EnglLayout({ children }: { children: React.ReactNode }) {
+export default function InglesLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
