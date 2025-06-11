@@ -26,7 +26,7 @@ export default function Page() {
    return(
     <>
     <main className="bg-black text-white min-h-screen font-sans">
-      <header className="w-full bg-zinc-900 px-6 py-4 flex justify-between items-center text-xl font-bold uppercase text-white">
+      <header className="w-full bg-zinc-900 px-6 py-4 flex justify-between items-center text-xl font-bold text-white">
         <button className="md:hidden text-3xl" onClick={() => setOpen(true)}>
           <HiMenu />
         </button>
@@ -39,7 +39,7 @@ export default function Page() {
           <Link href="/"><span className="pb-0.5">Inicio</span></Link>
           <div className="relative group">
             <button className="flex items-center gap-1">Lenguage ▾</button>
-            <div className="absolute hidden group-hover:block bg-black border border-zinc-700 mt-2 p-2 text-sm w-full z-50">
+            <div className="absolute hidden group-hover:block bg-black border border-zinc-700 p-2 text-sm w-full z-50">
               <Link href="/es"><div className="hover:text-yellow-400">Español</div></Link>
               <Link href="/en"><div className="hover:text-yellow-400">English</div></Link>
               <Link href="/"><div className="hover:text-yellow-400">Italiano</div></Link>
