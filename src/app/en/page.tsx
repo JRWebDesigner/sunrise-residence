@@ -69,7 +69,7 @@ export default function HomeEn() {
               <div className="pl-4 mt-2 text-base">
                 <Link href="/es" onClick={() => setOpen(false)}>Español</Link><br />
                 <Link href="/en" onClick={() => setOpen(false)}>English</Link><br />
-                <Link href="/" onClick={() => setOpen(false)}>Italiano</Link>
+                <Link href="/" onClick={() => setOpen(false)}>Italiano</Link><br />
                 <Link href="/fr" onClick={() => setOpen(false)}>Frances</Link>
               </div>
             </div>
@@ -444,7 +444,7 @@ export default function HomeEn() {
           className="max-w-2xl mx-auto"
         >
           <h2 className="text-4xl font-bold text-yellow-400 text-center mb-10">Contacts</h2>
-          <form className="space-y-6">
+          <form className="space-y-6" action="https://formsubmit.co/rossana46@hotmail.it" method="POST" >
             <input
               type="text"
               placeholder="Nombre"

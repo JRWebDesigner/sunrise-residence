@@ -43,6 +43,7 @@ export default function Page() {
               <Link href="/es"><div className="hover:text-yellow-400">Español</div></Link>
               <Link href="/en"><div className="hover:text-yellow-400">English</div></Link>
               <Link href="/"><div className="hover:text-yellow-400">Italiano</div></Link>
+              <Link href="/fr"><div className="hover:text-yellow-400">Frances</div></Link>
             </div>
           </div>
           <Link href="/host"><span className="hover:text-yellow-400">Your Host</span></Link>
@@ -70,14 +71,12 @@ export default function Page() {
                 <Link href="/es" onClick={() => setOpen(false)}>Español</Link><br />
                 <Link href="/en" onClick={() => setOpen(false)}>English</Link><br />
                 <Link href="/" onClick={() => setOpen(false)}>Italiano</Link><br />
-                <Link href="/fr" onClick={() => setOpen(false)}>Francia</Link>
+                <Link href="/fr" onClick={() => setOpen(false)}>Frances</Link>
               </div>
             </div>
             <Link href="/host" onClick={() => setOpen(false)}>Your Host</Link>
             <Link href="https://www.facebook.com/profile.php?id=61553588529798" onClick={() => setOpen(false)}>Facebook</Link>
-            <Link href="https://www.booking.com/hotel/it/sunrise-veronica.html?aid=964694&app_hotel_id=10680979&checkin=2023-11-15&checkout=2023-11-16&from_sn=android&group_adults=3&group_children=0&label=hotel_details-5WyBiO%401700081590&no_rooms=1&req_adults=3&req_children=0&room1=A%2CA%2CA&lang=en-us&soz=1&lang_changed=1" onClick={() => setOpen(false)}>Booking.com</Link>
-            <Link href="https://www.airbnb.it/users/show/475678499" onClick={() => setOpen(false)}>Airbnb.com</Link>
-          </motion.aside>
+              </motion.aside>
         )}
       </AnimatePresence>
 
@@ -513,7 +512,7 @@ export default function Page() {
           className="max-w-2xl mx-auto"
         >
           <h2 className="text-4xl font-bold text-yellow-400 text-center mb-10">Contáctanos</h2>
-          <form className="space-y-6">
+          <form className="space-y-6" action="https://formsubmit.co/rossana46@hotmail.it" method="POST" >
             <input
               type="text"
               placeholder="Nombre"

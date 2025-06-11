@@ -7,8 +7,9 @@ const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
 
 export const metadata: Metadata = {
+<<<<<<< HEAD
   title: "Sunrise Residence",
-  description: "Benvenuti a Sunrise Residence",
+  description: "Prenota il tuo soggiorno ad Alba nel nostro appartamento turistico. Posizione centrale, Wi-Fi, cucina attrezzata e vista sulle Langhe. Miglior prezzo garantito!",
   alternates: {
     canonical: "https://tusitio.com/",
     languages: {
