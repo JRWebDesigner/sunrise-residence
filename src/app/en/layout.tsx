@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "Sunrise Residence",
   description: "Bienvenue à Sunrise Residence",
   alternates: {
-    canonical: "https://tusitio.com/fr",
+    canonical: "https://sunriseresidencealba.com/en",
     languages: {
       "it": "https://sunriseresidencealba.com/",
       "fr": "https://sunriseresidencealba.com/fr",
